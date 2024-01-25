@@ -1,36 +1,125 @@
 # The Advanced Analytics Workspace
 
-<center>
 ![Statistics](images/statistics-on-the-moon-small.jpg)
-</center>
 
-!!! Info "Open source and made for you!"
-    The AAW is an open-source platform specifically crafted for data scientists, analysts, and researchers proficient in open-source tools and coding.
-
-The [Advanced Analytics Workspace](https://www.statcan.gc.ca/data-analytics-services/aaw) (AAW) stands as a comprehensive and open-source solution designed to cater to the diverse needs of data scientists. It offers a flexible environment that empowers practitioners to seamlessly conduct their work. More information about the AAW and Data Analytics Services (DAS) can be found on [the DAS Portal](https://www.statcan.gc.ca/data-analytics-services/aaw).
-
-!!! Warning "Warning"
-    Many of the links on https://www.statcan.gc.ca/data-analytics-services/aaw are broken.
+The [Advanced Analytics Workspace](https://www.statcan.gc.ca/data-analytics-services/aaw) (AAW) stands as a comprehensive and open-source solution designed to cater to the diverse needs of data scientists, analysts, and researchers proficient in open-source tools and coding. It offers a flexible environment that empowers practitioners to seamlessly conduct their work. More information about the AAW and Data Analytics Services (DAS) can be found on [the DAS Portal](https://www.statcan.gc.ca/data-analytics-services/aaw).
 
 ## Getting Started
 
-- **StatCan Users**: Access the [Kubeflow Dashboard](https://kubeflow.aaw.cloud.statcan.ca/) to get started.
-- **External Users and Collaborators**: Fill out [the DAS Onboarding Form](https://forms.office.com/r/RPrgDDkU9T) to tell us about your project needs. Once completed, a DAS representative will contact you to discuss the next steps and begin the onboarding process. Note: External users need a StatCan Cloud account granted by the business sponsor.
+### StatCan Users
 
-## Creating Kubeflow Notebook Servers
+Access the [Kubeflow Dashboard](https://kubeflow.aaw.cloud.statcan.ca/) to get started.
 
-Follow these steps to create your first notebook server:
+### External Users and Collaborators
 
-1. Log in to [Kubeflow](https://kubeflow.aaw.cloud.statcan.ca/);
-2. Click **Notebooks** from the sidebar on the left (you may need to select a namespace from the **Select namespace** dropdown menu in the upper left-hand corner);
-3. Click the **+ New Notebook** button (upper right-hand corder);
-4. Follow [the instructions here](https://statcan.github.io/aaw/en/1-Experiments/Kubeflow.html#setup) to configure the notebook server.
+ Fill out [the DAS Onboarding Form](https://forms.office.com/r/RPrgDDkU9T) to tell us about your project needs. Once completed, a DAS representative will contact you to discuss the next steps and begin the onboarding process. Note: External users need a StatCan Cloud account granted by the business sponsor.
 
-<!-- prettier-ignore -->
-!!! Hint "Need help creating a notebook server?"
-    We have [a Slideshow](https://docs.google.com/presentation/d/12yTDlbMCmbg0ccdea2h0vwhs5YTa_GHm_3DieG5A-k8/edit?usp=sharing) with instructions on how to create a notebook server.
+## Accessing the AAW
+
+### AVD
+
+The Advanced Analytics Workspace (AAW) runs in the cloud and it's main interface is called Kubeflow. In order to access the AAW, please launch your AVD using the **Remote Desktop** icon on your personal computer.
+
+![AVD Icon](./images/avd-icon.png)
+
+Once your AVD has started, you can launch the AAW by opening the icon on your desktop. You can also access the AAW by following this link: [https://kubeflow.aaw.cloud.statcan.ca/](https://kubeflow.aaw.cloud.statcan.ca/).
+
+![AAW Icon](./images/aaw-icon-on-desktop.png)
+
+#### Login with Your Cloud Account
+
+You'll need to login using your cloud account.
+
+![Cloud Account](./images/log-in-with-cloud-account.png)
+
+### Using the AAW through the Kubeflow Interface
+
+#### Kubeflow Central Dashboard
+
+When you first log in to the AAW, you will see the Kubeflow Central Dashboard. This contains links to recently used Notebook Servers and documentation. 
+
+![Kubeflow Central Dashboard](./images/kubeflow-main-ui.PNG)
+
+#### Kubeflow Central Dashboard Sidebar
+
+The sidebar on the left has 
+
+- **Home**: The Kubeflow Central Dashboard.
+- **Notebooks**: Manage your notebook servers.
+- **Metrics**: Grafana, the AAW's observability platform.
+- **Github**: The official Kubeflow Github repository.
+- **Documentation**: The official Kubeflow documentation.
+
+As a user of the Advanced Analytics Workspace, you'll only need to use **Home** and **Notebooks**.
+
+![Kubeflow Central Dashboard Sidebar](./images/kubeflow-sidebar.png)
+
+## Namespace Selection
+
+When you are on the Kubeflow Central Dashboard, in the upper left corner you will find the **Select namespace** dropdown menu. If the menu says "Select namespace" then you need to select a namespace before you can view, edit or launch any of your notebook servers. 
+
+![Selecting a Namespace](./images/select-a-namespace-1.png)
+
+### Select the namespace from the namespace dropdown menu.
+
+When you select the menu, a dropdown list will appear with all the namespaces you belong to. Please select the appropriate namespace before moving forward.
+
+![Selecting a Namespace](./images/select-a-namespace-2.png)
+
+### If you see the name of a namespace, you are ready to use the AAW.
+
+Once a namespace has been selected, the name of the namespace will replace "Select namespace". If no namespaces appear in the menu, please contact us on the **#general** channel on [Slack](https://statcan-aaw.slack.com).
+
+![Selecting a Namespace](./images/select-a-namespace-3.png)
+
+## Creating a new Notebook Server
+
+### Click **Notebooks** from the sidebar on the left.
+
+Once you click **Notebooks** from the Central Dashboard Sidebar, you will be brought to the Notebooks management section of Kubeflow where you can **Create**, **Start**, **Stop** and **Delete** your notebook servers and storage.
+
+![Kubeflow Notebook Servers](./images/kubeflow-sidebar-notebooks-selected.png)
+
+**Note**:  only one set of notebook servers can be viewed at a time. If you have more than one namespace. You may need to select the appropriate namespace from the **Select namespace** dropdown menu in the upper left-hand corner to see the notebook servers belonging to that particular namespace. 
+
+### Click **"+ New Notebook"**
+
+To create a new notebook server, press the **"+ New Notebook"** button in the upper right-hand corner.
+
+![+ New Notebook](./images/new-notebook.png)
+
+## Configure the Notebook Server
+
+### Name your notebook server
+
+The first thing you'll have to do is to name your Notebook Server. You must start the name with a lowercase letter and no spaces.
+
+![Selecting a Namespace](./images/name-your-server.png)
+
+### Select the notebook server type.
+
+If you need SAS, select SAS, otherwise JupyterLab is suitable for most users. The RStudio image only has RStudio and Ubuntu is a more advanced desktop image for special desktop applications.
+
+![Selecting a Namespace](./images/make-a-new-sas-server.png)
+
+### Select Protected B if you need it
+
+Select Protected B if you need it. Your notebook server will not have access to the internet if you do this.
+
+![Selecting a Namespace](./images/protected-b.png)
+
+Once your notebook server has been named and you have selected the type of notebook server you can press **LAUNCH**.
+
+![Selecting a Namespace](./images/launch.png)
+
+#### Need Assistance?
+
+- For more detailed instructions on notebook server creation, please [follow the instructions here](https://statcan.github.io/aaw/en/1-Experiments/Kubeflow.html#setup) to configure the notebook server.
+- We also have [a Slideshow](https://docs.google.com/presentation/d/12yTDlbMCmbg0ccdea2h0vwhs5YTa_GHm_3DieG5A-k8/edit?usp=sharing) with instructions on how to create a notebook server.
 
 ### Kubeflow Documentation
+
+![Kubeflow Central Dashboard](./images/kubeflow-main-screen.png)
 
 The AAW is based on [Kubeflow](https://statcan.github.io/aaw/en/1-Experiments/Kubeflow.html), an open source comprehensive solution for deploying and managing end-to-end ML workflows. Kubeflow simplifies the creation and management of customizable compute environments with user-controlled resource provisioning (custom CPU, GPU, RAM and storage). For more information on Kubeflow, please visit:
 
@@ -45,7 +134,7 @@ Videos on Kubeflow have been developed by Google:
 
 ## Working with Your Data
 
-Once your notebook server has been created, you may want to import data or access shared data from cloud storage. Instructions on how to add storage to your notebook server can be found on [the documentation page for storage](https://statcan.github.io/aaw/en/5-Storage/Disks.html).
+Once your notebook server has been created, you may want to import data or access shared data from cloud storage. Instructions on how to add storage to your notebook server can be found on [the documentation page for storage](https://statcan.github.io/aaw/en/5-Storage/KubeflowVolumes.html).
 
 ### Protected Data
 
@@ -56,7 +145,7 @@ If your project requires protected data:
 
 ### Unprotected Data
 
-If you want to upload data into your notebook server ([on a Data Volume](https://statcan.github.io/aaw/en/5-Storage/Disks.html#setup), for instance), you can upload data into JupyterLab by following [the official JupyterLab documentation](https://jupyterlab.readthedocs.io/en/stable/user/files.html#uploading-and-downloading), which has a section on uploading and downloading files from the JupyterLab web interface.
+If you want to upload data into your notebook server ([on a Data Volume](https://statcan.github.io/aaw/en/5-Storage/KubeflowVolumes.html#setup), for instance), you can upload data into JupyterLab by following [the official JupyterLab documentation](https://jupyterlab.readthedocs.io/en/stable/user/files.html#uploading-and-downloading), which has a section on uploading and downloading files from the JupyterLab web interface.
 
 ## Working in JupyterLab
 
