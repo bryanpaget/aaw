@@ -1,12 +1,30 @@
 <!-- markdownlint-disable no-bare-urls no-duplicate-header -->
 
-# Data Analytics as a Service
+# Advanced Analytics Workspace (AAW)
 
-Data Analytics as a Service for the Government of Canada and external collaborators.
+![AAW](https://github.com/StatCan/aaw/assets/8212170/ed9d44d9-3606-4097-b9a8-2ee715f13ebf)
+
+Welcome to the documentation repository for the Advanced Analytics Workspace (AAW), brought to you by Data Analytics Services (DAS) at Statistics Canada. This documentation is tailored for users and developers of the AAW within the Government of Canada and external collaborators.
+
+If you have any questions about the project, feel free to connect with us on our [**Slack Support Channel**](https://statcan-aaw.slack.com/).
+
+## AAW Repositories
+
+1. [General](#advanced-analytics-workspace)
+1. [Terraform](#terraform)
+1. [Installation](#install-the-aaw-platform-and-infrastructure)
+1. [Community Engagement](#community-engagement)
+1. [Developer Notes](#developer-notes)
+
+## What AAW Can Do
+
+- Explore our JupyterLab images featuring example notebooks and data, located in `/aaw-contrib-jupyter-notebooks/`.
+- The R Studio image also includes example notebooks and data, available in `/aaw-contrib-r-notebooks/`.
+- Find more examples in the [Example Notebooks](https://statcan.github.io/aaw/en/1-Experiments/Notebooks/DrawData_EN.html) section.
 
 ## Presentations
 
-We highly encourage you to watch our YouTube presentation given at Stratosphere:
+We highly recommend watching our YouTube presentation delivered at Stratosphere:
 
 - [YouTube](https://www.youtube.com/watch?v=quYuuEAqNm0)
 - [SlideDeck](https://govcloud.blob.core.windows.net/docs/daaas-cncf.pdf)
@@ -14,11 +32,13 @@ We highly encourage you to watch our YouTube presentation given at Stratosphere:
 
 ## Security
 
-A discussion about some of the security best practices in use by this platform:
+Explore discussions about some of the security best practices employed by this platform:
 
 - [aaw-security-proposal](https://github.com/StatCan/aaw-security-proposal)
 
-## Advanced Analytics Workspace
+## Repositories
+
+### General Advanced Analytics Workspace
 
 The following is a list of all the `general` related repositories for the Advanced Analytics Workspace project.
 
@@ -47,12 +67,12 @@ The following is a list of all the `general` related repositories for the Advanc
 | [aaw-security-proposal](https://github.com/StatCan/aaw-security-proposal)                                 | Proposal for the implementation of Protected B workloads in AAW                               | Public     |
 | [aaw-toleration-injector](https://github.com/StatCan/aaw-toleration-injector)                             | Kubernetes toleration injector with support for GPUs and Node Pools                           | Public     |
 
-## Terraform
+### Terraform
 
 The following is a list of all the `terraform` related repositories for the
 Advanced Analytics Workspace project.
 
-### Install the AAW Platform and Infrastructure
+#### Install the AAW Platform and Infrastructure
 
 ```sh
 ## Installs AAW Platform and Infrastructure
@@ -82,7 +102,7 @@ Advanced Analytics Workspace project.
 | AAW       | [terraform-azure-statcan-aaw-region-environment](https://github.com/statcan/terraform-azure-statcan-aaw-region-environment)                                   | Terraform module of Advanced Analytics Workspaces (AAW) per-region configuration of Azure    |
 | AAW       | [terraform-statcan-aaw-platform](https://github.com/statcan/terraform-statcan-aaw-platform)                                                                   | Terraform module for the Advanced Analytics Workspaces (AAW) platform                        |
 
-### Install the Cloud Native Platform
+#### Install the Cloud Native Platform
 
 ```sh
 ## Statistics Canada's Cloud Native Platform (CNP)
@@ -115,7 +135,7 @@ Advanced Analytics Workspace project.
 | CNS       | [terraform-statcan-kubernetes-core-platform](https://github.com/statcan/terraform-statcan-kubernetes-core-platform)                                     | Terraform module for Statistics Canada Core Kubernetes Platform                   |
 | CNS       | [terraform-statcan-kubernetes-app-platform](https://github.com/statcan/terraform-statcan-kubernetes-app-platform)                                       | Terraform module for Statistics Canada Kubernetes Application Platform            |
 
-### Misc
+#### Misc
 
 | Repository                                                                                    | Description                                                | Visibility |
 |-----------------------------------------------------------------------------------------------|------------------------------------------------------------|------------|
@@ -145,7 +165,8 @@ multilingual support and other UX related enhancements.
 | [minio-console](https://github.com/StatCan/minio-console)           | Multilingual support for MinIO Console      | Public     |
 | [rstudio](https://github.com/StatCan/rstudio)                       | Multilingual support for RStudio            | Public     |
 
-### Developer Notes:
-Fix spelling by executing `fix-spelling-en` and `fix-spelling-fr` 
-Adding to the sensitive or insensitive category
-Ignoring will simply ignore the error for this round. It will trigger again next execution. 
+## Developer Notes
+
+- Fix spelling by executing `fix-spelling-en` and `fix-spelling-fr` 
+- Adding to the sensitive or insensitive category
+- Ignoring will simply ignore the error for this round. It will trigger again next execution. 
