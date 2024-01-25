@@ -6,16 +6,6 @@ The [Advanced Analytics Workspace](https://www.statcan.gc.ca/data-analytics-serv
 
 ## Getting Started
 
-### StatCan Users
-
-Access the [Kubeflow Dashboard](https://kubeflow.aaw.cloud.statcan.ca/) to get started.
-
-### External Users and Collaborators
-
- Fill out [the DAS Onboarding Form](https://forms.office.com/r/RPrgDDkU9T) to tell us about your project needs. Once completed, a DAS representative will contact you to discuss the next steps and begin the onboarding process. Note: External users need a StatCan Cloud account granted by the business sponsor.
-
-## Accessing the AAW
-
 ### AVD
 
 The Advanced Analytics Workspace (AAW) runs in the cloud and it's main interface is called Kubeflow. In order to access the AAW, please launch your AVD using the **Remote Desktop** icon on your personal computer.
@@ -26,11 +16,11 @@ Once your AVD has started, you can launch the AAW by opening the icon on your de
 
 ![AAW Icon](./images/aaw-icon-on-desktop.png)
 
-#### Login with Your Cloud Account
+#### Login with Your Statistics Canada Account
 
-You'll need to login using your cloud account.
+You'll need to login using your Statistics Canada account.
 
-![Cloud Account](./images/log-in-with-cloud-account.png)
+![Cloud Account](./images/log-in-with-stats-account.png)
 
 ### Using the AAW through the Kubeflow Interface
 
