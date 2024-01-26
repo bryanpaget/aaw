@@ -65,8 +65,10 @@ extra:
 
 # Page tree
 nav:
-  - Getting Started: index.md
-      - Accessing the AAW: 0-Getting-Started/index.md
+  - Getting Started:
+      - Introduction: index.md
+      - Accessing the AAW: 0-Getting-Started/Getting-Started.md
+      - Documentation and Help: 0-Getting-Started/Documentation-and-Help.md
   - Storage:
       - Overview: 5-Storage/Overview.md
       - Azure Blob Storage (Containers): 5-Storage/AzureBlobStorage.md
