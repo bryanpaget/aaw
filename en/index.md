@@ -20,13 +20,13 @@ Once your AVD has started, you can launch the AAW by opening the icon on your de
 
 You'll need to login using your Statistics Canada account.
 
-![Cloud Account](./images/log-in-with-stats-account.png)
+![Statistics Canada Account](./images/log-in-with-stats-account.png)
 
 ### Using the AAW through the Kubeflow Interface
 
 #### Kubeflow Central Dashboard
 
-When you first log in to the AAW, you will see the Kubeflow Central Dashboard. This contains links to recently used Notebook Servers and documentation. 
+When you first log in to the AAW, you will see the Kubeflow Central Dashboard. This contains links to recently used Notebook Servers and documentation.
 
 ![Kubeflow Central Dashboard](./images/kubeflow-main-ui.PNG)
 
@@ -58,7 +58,7 @@ When you select the menu, a dropdown list will appear with all the namespaces yo
 
 ### If you see the name of a namespace, you are ready to use the AAW.
 
-Once a namespace has been selected, the name of the namespace will replace "Select namespace". If no namespaces appear in the menu, please contact us on the **#general** channel on [Slack](https://statcan-aaw.slack.com).
+Once a namespace has been selected, the name of the namespace will replace "Select namespace". If no namespaces appear in the menu, please contact us on [Jira](https://jirab.statcan.ca/projects/BTIS/issues).
 
 ![Selecting a Namespace](./images/select-a-namespace-3.png)
 
@@ -88,9 +88,33 @@ The first thing you'll have to do is to name your Notebook Server. You must star
 
 ### Select the notebook server type.
 
-If you need SAS, select SAS, otherwise JupyterLab is suitable for most users. The RStudio image only has RStudio and Ubuntu is a more advanced desktop image for special desktop applications.
+![Select Your Server Type](./images/make-a-new-sas-server.png)
 
-![Selecting a Namespace](./images/make-a-new-sas-server.png)
+The SAS image will be most appropriate for most users. If you don't need access to SAS, then the JupyterLab image is a lighter alternative. The RStudio image only has RStudio so if you only ever want to use RStudio that image may suite your needs well. The Ubuntu image is a more advanced desktop image for special desktop applications.
+
+#### JupyterLab
+
+If you don't need access to SAS, then the JupyterLab image is a lighter alternative.
+
+![JupyterLab](./images/fullscreen-jupyter.png)
+
+#### RStudio
+
+The RStudio image only has RStudio so if you only ever want to use RStudio that image may suite your needs well.
+
+![JupyterLab](./images/fullscreen-rstudio.png)
+
+#### Ubuntu
+
+The Ubuntu image is a more advanced desktop image for special desktop applications.
+
+![JupyterLab](./images/fullscreen-ubuntu.png)
+
+#### SAS
+
+The SAS image will be most appropriate for most users.
+
+![JupyterLab](./images/fullscreen-sas.png)
 
 ### Select Protected B if you need it
 
@@ -167,7 +191,7 @@ You can download these notebooks and upload them to your notebook server. These 
 
 ## Need Help?
 
-Join our vibrant community! Connect with AAW developers and fellow users, ask questions, and share experiences all on the [Slack Support Channel](https://statcan-aaw.slack.com/).
+Join our vibrant community! Connect with AAW developers and fellow users, ask questions, and share experiences all on [Jira](https://jirab.statcan.ca/projects/BTIS/issues).
 
 For comprehensive documentation and guidance, refer to the:
 
@@ -175,12 +199,9 @@ For comprehensive documentation and guidance, refer to the:
 - [Official Kubeflow Documentation](https://www.kubeflow.org/docs/)
 - [Official JupyterLab Documentation](https://jupyterlab.readthedocs.io/en/stable/user/index.html)
 
-!!! Info "Do you need help?"
-    **Need real-time assistance?** Join our [Slack Support Channel](https://statcan-aaw.slack.com).
-
 ### Demos and Contributions
 
-For in-depth demos, personalized assistance, or to contribute to the AAW community, reach out to us on [Slack Support Channel](https://statcan-aaw.slack.com). You can contribute to the platform's development and report issues or feature requests on [GitHub](https://github.com/StatCan/aaw).
+For in-depth demos, personalized assistance, or to contribute to the AAW community, reach out to us on [Jira](https://jirab.statcan.ca/projects/BTIS/issues). You can contribute to the platform's development and report issues or feature requests on [GitHub](https://github.com/StatCan/aaw).
 
 ## External Learning Resources
 
