@@ -5,7 +5,7 @@
 
 ## Kubeflow Documentation
 
-![Kubeflow Central Dashboard](./images/kubeflow-main-screen.png)
+![Kubeflow Central Dashboard](../images/kubeflow-main-screen.png)
 
 The AAW is based on [Kubeflow](https://statcan.github.io/aaw/en/1-Experiments/Kubeflow.html), an open source comprehensive solution for deploying and managing end-to-end ML workflows. Kubeflow simplifies the creation and management of customizable compute environments with user-controlled resource provisioning (custom CPU, GPU, RAM and storage). For more information on Kubeflow, please visit:
 
