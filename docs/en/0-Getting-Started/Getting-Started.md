@@ -1,5 +1,3 @@
-# Getting Started
-
 ## AVD
 
 The Advanced Analytics Workspace (AAW) runs in the cloud and it's main interface is called Kubeflow. In order to access the AAW, please launch your AVD using the **Remote Desktop** icon on your personal computer.
