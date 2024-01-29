@@ -25,7 +25,7 @@ theme:
 
 markdown_extensions:
   - toc:
-      baselevel: 1
+      baselevel: 2
       permalink: true
   - attr_list
   - admonition
@@ -66,9 +66,9 @@ extra:
 # Page tree
 nav:
   - Getting Started:
-      - Introduction: index.md
-      - Accessing the AAW: 0-Getting-Started/Getting-Started.md
-      - Documentation and Help: 0-Getting-Started/Documentation-and-Help.md
+      - Getting Started: index.md
+      - Documentation: 0-Getting-Started/Getting-Started.md
+      - Help: 0-Getting-Started/Help.md
   - Storage:
       - Overview: 5-Storage/Overview.md
       - Azure Blob Storage (Containers): 5-Storage/AzureBlobStorage.md
