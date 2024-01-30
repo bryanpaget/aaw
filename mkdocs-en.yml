@@ -67,7 +67,7 @@ extra:
 nav:
   - Getting Started:
       - Getting Started: index.md
-      - Documentation: 0-Getting-Started/Getting-Started.md
+      - Documentation: 0-Getting-Started/Documentation.md
       - Help: 0-Getting-Started/Help.md
   - Storage:
       - Overview: 5-Storage/Overview.md
