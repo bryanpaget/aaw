@@ -78,17 +78,17 @@ To create a new notebook server, press the **"+ New Notebook"** button in the up
 
 # Configure the Notebook Server
 
-## Name your notebook server
+## Name
 
 The first thing you'll have to do is to name your Notebook Server. You must start the name with a lowercase letter and no spaces.
 
 ![Selecting a Namespace](./images/name-your-server.png)
 
-# Select the notebook server type.
+# Select the Notebook Server Type
+
+If you don't know which server type to choose, continue reading for a short description of each type.
 
 ![Select Your Server Type](./images/make-a-new-sas-server.png)
-
-The SAS image will be most appropriate for most users. If you don't need access to SAS, then the JupyterLab image is a lighter alternative. The RStudio image only has RStudio so if you only ever want to use RStudio that image may suite your needs well. The Ubuntu image is a more advanced desktop image for special desktop applications.
 
 # JupyterLab
 
@@ -114,7 +114,7 @@ Interactive sessions can be started by clicking on any of the icons in the Launc
 
 # SAS
 
-The SAS Notebook Server is the most comprehensive JupyterLab-based Notebook Server. It has more features than the JupyterLab Notebook Server, including its own instance of RStudio. This is the best option for most people.
+The SAS Notebook Server is the most comprehensive JupyterLab-based Notebook Server. It has more features than the JupyterLab Notebook Server, including its own instance of RStudio. **This is the best option for most people.**
 
 ## Features
 
@@ -136,7 +136,7 @@ The RStudio Server is for those who need a lightweight RStudio server without th
 
 ## Features
 
-The RStudio image only has RStudio so if you only ever want to use RStudio that image may suite your needs well. We include some packages by default:
+The AAW includes some useful R packages by default:
 
 - [Tidyverse](https://www.tidyverse.org/), a set of R packages for data science
 - [Tidymodels](https://www.tidymodels.org/), a collection of packages for modeling and machine learning using tidyverse principles
