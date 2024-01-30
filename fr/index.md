@@ -2,7 +2,7 @@
 
 ![Statistiques](images/statistiques-sur-la-lune-small.jpg)
 
-L'[Espace de travail d'analyse avancée](https://www.statcan.gc.ca/data-analytics-services/aaw) (AAW) se présente comme une solution complète et open source conçue pour répondre aux divers besoins des scientifiques de données, des analystes et des chercheurs maîtrisant les outils et le codage open source. Il offre un environnement flexible qui permet aux praticiens de mener leur travail en toute transparence. De plus amples renseignements sur l'EAA et les Services d'analyse de données (DAS) sont disponibles sur [le portail DAS](https://www.statcan.gc.ca/data-analytics-services/aaw).
+L'[Espace de travail d'analyse avancée](https://www.statcan.gc.ca/data-analytics-services/aaw) (EAA) se présente comme une solution complète et open source conçue pour répondre aux divers besoins des scientifiques de données, des analystes et des chercheurs maîtrisant les outils et le codage open source. Il offre un environnement flexible qui permet aux praticiens de mener leur travail en toute transparence. De plus amples renseignements sur l'EAA et les Services d'analyse de données (SAD) sont disponibles sur [le portail SAD](https://www.statcan.gc.ca/data-analytics-services/aaw).
 
 ## AVD
 
@@ -12,7 +12,7 @@ L'Espace de travail d'analyse avancée (EAA) s'exécute dans le cloud et son int
 
 Une fois votre AVD démarré, vous pouvez lancer l'EAA en ouvrant l'icône sur votre bureau. Vous pouvez également accéder à l'EAA en suivant ce lien : [https://kubeflow.aaw.cloud.statcan.ca/](https://kubeflow.aaw.cloud.statcan.ca/).
 
-![Icône AAW](./images/aaw-icon-on-desktop.png)
+![Icône d'EAA](./images/aaw-icon-on-desktop.png)
 
 # Connectez-vous avec votre compte Statistique Canada
 
@@ -136,7 +136,7 @@ Le serveur RStudio est destiné à ceux qui ont besoin d'un serveur RStudio lég
 
 ## Caractéristiques
 
-l'EAA inclut par défaut quelques packages R utiles :
+L'EAA inclut par défaut quelques packages R utiles:
 
 - [Tidyverse](https://www.tidyverse.org/), un ensemble de packages R pour la science des données
 - [Tidymodels](https://www.tidymodels.org/), une collection de packages pour la modélisation et l'apprentissage automatique utilisant les principes de Tidyverse
