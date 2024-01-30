@@ -16,6 +16,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://statcan.github.io/aaw/fr/0-Getting-Started/Aide.html</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://statcan.github.io/aaw/fr/0-Getting-Started/Documentation.html</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://statcan.github.io/aaw/fr/1-Experiences/Apercu.html</loc>
          <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>

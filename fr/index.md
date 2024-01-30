@@ -1,143 +1,177 @@
-# Bienvenue dans l'espace de travail d'analyse avancée
+# L'espace de travail d'analyse avancée
 
-<center>
-![Statistiques](images/statistiques-sur-la-lune.jpg)
-</center>
+![Statistiques](images/statistiques-sur-la-lune-small.jpg)
 
-## La documentation de l'espace de travail d'analyse avancée
+L'[Espace de travail d'analyse avancée](https://www.statcan.gc.ca/data-analytics-services/aaw) (AAW) se présente comme une solution complète et open source conçue pour répondre aux divers besoins des scientifiques de données, des analystes et des chercheurs maîtrisant les outils et le codage open source. Il offre un environnement flexible qui permet aux praticiens de mener leur travail en toute transparence. De plus amples renseignements sur l'EAA et les Services d'analyse de données (DAS) sont disponibles sur [le portail DAS](https://www.statcan.gc.ca/data-analytics-services/aaw).
 
-_Bienvenue dans le monde de la science des données et de l'apprentissage automatique !_
+## AVD
 
-<!-- prettier-ignore -->
-!!! info "Qu'est-ce que l'ETAA?"
-     **[Espace de travail d'analyse avancée](https://www.statcan.gc.ca/services-analyse-donnees/etaa)** est une plateforme open source conçue pour les data scientists, les intendants des données, les analystes et les chercheurs familiarisés avec les outils open source et le codage. Développé par des data scientists pour des data scientists, ETAA fournit un environnement flexible qui permet aux praticiens avancés de faire leur travail en toute simplicité.
+L'Espace de travail d'analyse avancée (EAA) s'exécute dans le cloud et son interface principale s'appelle Kubeflow. Pour accéder à l'EAA, veuillez lancer votre AVD à l'aide de l'icône **Remote Desktop** sur votre ordinateur personnel.
 
-L'ETAA est une solution complète pour la science des données et l'analyse des données. Avec l'ETAA, vous pouvez personnaliser les déploiements de serveurs de bloc-notes en fonction de vos besoins spécifiques en science des données. Nous avons un petit nombre d'images Docker personnalisées réalisées par notre équipe.
+![Icône AVD](./images/avd-icon.png)
 
-<!-- prettier-ignore -->
-!!! info "Qu'est-ce que Kubeflow ?"
-     L'ETAA est basé sur [Kubeflow](https://www.kubeflow.org/), une solution complète open source pour le déploiement et la gestion de flux de travail ML de bout en bout.
+Une fois votre AVD démarré, vous pouvez lancer l'EAA en ouvrant l'icône sur votre bureau. Vous pouvez également accéder à l'EAA en suivant ce lien : [https://kubeflow.aaw.cloud.statcan.ca/](https://kubeflow.aaw.cloud.statcan.ca/).
 
-Que vous débutiez ou que vous soyez déjà à fond dans l'analyse des données, l'espace de travail Advanced Analytics a tout ce dont vous avez besoin pour faire passer votre travail au niveau supérieur. Des outils puissants pour les pipelines de données au stockage en nuage pour vos ensembles de données, notre plateforme a tout pour plaire. Besoin de collaborer avec des collègues ou de publier vos résultats ? Aucun problème. Nous offrons des fonctionnalités de collaboration transparentes qui facilitent la collaboration et le partage de votre travail avec d'autres.
+![Icône AAW](./images/aaw-icon-on-desktop.png)
 
-Quelle que soit l'étape à laquelle vous vous trouvez dans votre parcours en science des données, l'espace de travail d'analyse avancée dispose des ressources dont vous avez besoin pour réussir.
+# Connectez-vous avec votre compte Statistique Canada
 
-## Premiers pas avec l'ETAA
+Vous devrez vous connecter en utilisant votre compte Statistique Canada.
 
-<center>
-![Icone EAA](https://user-images.githubusercontent.com/8212170/158243976-0ee25082-f3dc-4724-b8c3-1430c7f2a461.png)
-</center>
+![Compte Statistique Canada](./images/log-in-with-stats-account.png)
 
-### Le portail ETAA
+# Utilisation de l'EAA via l'interface Kubeflow
 
-La page d'accueil du portail ETAA est disponible uniquement pour les utilisateurs internes. Cependant, les utilisateurs externes disposant d'un compte cloud auquel le sponsor commercial a accordé l'accès peuvent accéder à la plate-forme via l'URL de la plate-forme d'analyse.
+## Tableau de bord central Kubeflow
 
-<!-- prettier-ignore -->
-!!! info annoter "Page d'accueil du portail ETAA"
-     - [**Page d'accueil du portail pour les employés de Statistique Canada**](https://www.statcan.gc.ca/services-analyse-donnees/etaa)
-     - [**Page d'accueil du portail pour les utilisateurs externes**](https://www.statcan.gc.ca/services-analyse-donnees/apercu)
+Lorsque vous vous connectez pour la première fois à l'EAA, vous verrez le tableau de bord central Kubeflow. Celui-ci contient des liens vers des serveurs bloc-notes récemment utilisés et de la documentation.
 
-### Compte Kubeflow
+![Tableau de bord central Kubeflow](./images/kubeflow-main-ui.PNG)
 
-<!-- prettier-ignore -->
-!!! important "Attention Utilisateurs Externes!"
-     Les utilisateurs externes à Statistique Canada auront besoin d'un compte cloud auquel l'entreprise commanditaire aura accès.
+## Barre latérale du tableau de bord central Kubeflow
 
-<!-- prettier-ignore -->
-!!! important "A l'attention des employés de Statistique Canada!"
-     Les utilisateurs internes de Statistique Canada peuvent commencer immédiatement sans aucune procédure d'inscription supplémentaire, il suffit de se rendre sur [https://kubeflow.ETAA.cloud.statcan.ca/](https://kubeflow.aaw.cloud.statcan.ca/).
+La barre latérale de gauche a
 
-<!-- prettier-ignore -->
-!!! note ""
-     <center>
-     [![Kubeflow est le cœur de l'ETAA !](./images/Kubeflow.PNG)](https://kubeflow.aaw.cloud.statcan.ca/)
-    <h3>**[👉 Cliquez ici pour configurer votre compte Kubeflow! 👈](https://kubeflow.aaw.cloud.statcan.ca/)**</h3>
-     </center>
+- **Accueil** : le tableau de bord central Kubeflow.
+- **Serveur Bloc-notes** : gérez vos serveurs de bloc-notes.
+- **Mesures** : Grafana, la plateforme d'observabilité de l'EAA.
+- **Github** : le référentiel officiel Kubeflow Github.
+- **Documentation** : La documentation officielle de Kubeflow.
 
-**[Kubeflow](1-Experiments/Kubeflow/)** est une plate-forme open source puissante et flexible qui permet une exploitation dynamique du calcul dans le cloud, les utilisateurs ayant la possibilité de contrôler les ressources de calcul, de mémoire et de stockage utilisées.
+En tant qu'utilisateur de l'espace de travail Advanced Analytics, vous n'aurez besoin que d'utiliser **Accueil** et **bloc-notes**.
 
-Kubeflow simplifie les tâches suivantes :
+![Barre latérale du tableau de bord central Kubeflow](./images/kubeflow-sidebar.png)
 
-- Création d'environnements personnalisables pour travailler avec des données avec un provisionnement de ressources contrôlé par l'utilisateur (CPU, GPU, RAM et stockage personnalisés).
-- Gestion des serveurs d'ordinateurs portables, y compris Ubuntu Desktop (via noVNC), R Studio, JupyterLab avec Python, R, Julia et SAS pour les employés de Statistique Canada.
+# Sélection d'espace de noms
 
-<!-- prettier-ignore -->
-!!! info "Tableau de bord Kubeflow"
-     - [**Kubeflow Dashboard**](https://kubeflow.aaw.cloud.statcan.ca/) Utilisez ce lien une fois que vous avez votre compte cloud !
+Lorsque vous êtes sur le tableau de bord central de Kubeflow, dans le coin supérieur gauche, vous trouverez le menu déroulant **Sélectionner l'espace de noms**. Si le menu indique « Sélectionner un espace de noms », vous devez sélectionner un espace de noms avant de pouvoir afficher, modifier ou lancer l'un de vos serveurs de bloc-notes.
 
-La prise en main de l'espace de travail d'analyse avancée (ETAA) est simple et rapide. Tout d'abord, vous voudrez vous connecter à Kubeflow pour créer votre premier serveur de bloc-notes exécutant JupyterLab, RStudio ou Ubuntu Desktop. Nous vous encourageons à rejoindre notre chaîne Slack pour entrer en contact avec d'autres data scientists et analystes, poser des questions et partager vos expériences avec la plateforme ETAA.
+![Sélection d'un espace de noms](./images/select-a-namespace-1.png)
 
-### Slack
+## Sélectionnez l'espace de noms dans le menu déroulant de l'espace de noms.
 
-<center>
-[![Posez des questions relatives à la plate-forme sur Slack !](images/SlackAAW.PNG)](https://statcan-aaw.slack.com/)
-</center>
+Lorsque vous sélectionnez le menu, une liste déroulante apparaîtra avec tous les espaces de noms auxquels vous appartenez. Veuillez sélectionner l'espace de noms approprié avant de continuer.
 
-- **[Cliquez ici pour vous connecter à notre espace de travail d'assistance Slack](https://statcan-aaw.slack.com/)**
+![Sélection d'un espace de noms](./images/select-a-namespace-2.png)
 
-- **Utilisez la chaîne _Général_ !**
+## Si vous voyez le nom d'un espace de noms, vous êtes prêt à utiliser l'EAA.
 
-Chez Statistique Canada, nous comprenons que se lancer dans un nouveau projet peut être accablant, et vous aurez probablement de nombreuses questions liées à la plateforme en cours de route. C'est pourquoi nous avons créé un **[canal Slack](https://statcan-aaw.slack.com/)** dédié pour vous fournir l'assistance dont vous avez besoin. Notre équipe d'experts est là pour répondre à vos questions, répondre à vos préoccupations et vous guider à chaque étape du processus.
+Une fois qu'un espace de noms a été sélectionné, le nom de l'espace de noms remplacera "Sélectionner l'espace de noms". Si aucun espace de noms n'apparaît dans le menu, veuillez nous contacter sur [Jira](https://jirab.statcan.ca/projects/BTIS/issues).
 
-Pour rejoindre notre **[canal Slack](https://statcan-aaw.slack.com/)**, cliquez simplement sur le lien fourni et suivez les instructions. Vous serez invité à créer un compte dans le coin supérieur droit de la page. Si vous avez une adresse de courriel « @statcan.gc.ca », utilisez-la lors de votre inscription, car cela garantira que vous êtes automatiquement approuvé et que vous pouvez commencer à vous engager immédiatement avec notre communauté.
+![Sélection d'un espace de noms](./images/select-a-namespace-3.png)
 
-Une fois que vous avez créé votre compte, vous aurez accès à une multitude de ressources et d'informations, ainsi que la possibilité de vous connecter avec d'autres utilisateurs qui travaillent sur des projets similaires. Notre **[chaîne Slack](https://statcan-aaw.slack.com/)** est l'endroit idéal pour poser des questions, partager des idées et collaborer avec vos pairs en temps réel. Que vous commenciez tout juste à démarrer un nouveau projet ou que vous recherchiez des conseils d'experts sur un problème complexe, notre équipe est là pour vous aider.
+# Création d'un nouveau serveur bloc-notes
 
-Alors n'hésitez pas : rejoignez notre **[canal Slack](https://statcan-aaw.slack.com/)** dès aujourd'hui et commencez à obtenir les réponses dont vous avez besoin pour réussir. Nous sommes impatients de vous accueillir dans notre communauté !
+## Cliquez sur **bloc-notes** dans la barre latérale de gauche.
 
-Cliquez sur le lien, puis choisissez "Créer un compte" dans le coin supérieur droit.
+Une fois que vous avez cliqué sur **bloc-notes** dans la barre latérale centrale du tableau de bord, vous serez redirigé vers la section de gestion des bloc-notes de Kubeflow où vous pourrez **Créer**, **Démarrer**, **Arrêter** et **Supprimer*. * vos serveurs de bloc-notes et votre stockage.
 
-<!-- prettier-ignore -->
-!!! note ""
-     <center>
-     ![Utilisez votre courriel @statcan.gc.ca!](images/SlackAAW2.png)
-     <h3>Utilisez votre adresse de courriel @statcan.gc.ca afin que vous soyez automatiquement approuvé.</h3>
-     </center>
+![Serveurs de bloc-notes Kubeflow](./images/kubeflow-sidebar-notebooks-selected.png)
 
-## 🧭 Mise en route
+**Remarque** : un seul ensemble de serveurs de bloc-notes peut être consulté à la fois. Si vous avez plusieurs espaces de noms. Vous devrez peut-être sélectionner l'espace de noms approprié dans le menu déroulant **Sélectionner l'espace de noms** dans le coin supérieur gauche pour voir les serveurs de bloc-notes appartenant à cet espace de noms particulier.
 
-Pour accéder aux services ETAA, vous devez vous connecter à Kubeflow avec votre compte cloud invité de Statistique Canada. Une fois connecté, sélectionnez Serveurs de bloc-notes et cliquez sur le bouton "Nouveau serveur" pour commencer.
+# Cliquez sur **"+ Nouveau bloc-notes"**
 
-1. Connectez-vous à [Kubeflow](https://kubeflow.aaw.cloud.statcan.ca/) avec votre compte cloud invité de Statistique Canada. Vous serez invité à authentifier le compte.
-2. Sélectionnez Serveurs de bloc-notes.
-3. Cliquez sur le bouton "➕ Nouveau serveur".
+Pour créer un nouveau serveur de bloc-notes, appuyez sur le bouton **"+ Nouveau bloc-notes"** dans le coin supérieur droit.
 
-## 🧰 Outils Offerts
+![+ Nouveau bloc-notes](./images/new-notebook.png)
 
-ETAA est une plate-forme flexible pour l'analyse de données et l'apprentissage automatique. Il propose une gamme de langages, notamment Python, R et Julia. ETAA prend également en charge les environnements de développement tels que VS Code, R Studio et bloc-notesJupyter. De plus, des bureaux virtuels Linux sont disponibles pour les utilisateurs qui ont besoin d'outils supplémentaires tels que OpenM++ et QGIS.
+# Configurer le serveur de bloc-notes
 
-Voici une liste d'outils que nous proposons :
+## Nom
 
-- 📜 Languages :
-   - 🐍 Python
-   - 📈 R
-   - 👩‍🔬 Julia
-- 🧮 Environnements de développement :
-   - Code VS
-   - Studio R
-   - Cahiers Jupyter
-- 🐧 Bureaux virtuels Linux pour des outils supplémentaires (🧫 OpenM++, 🌏 QGIS etc.)
+La première chose que vous devrez faire est de nommer votre serveur bloc-notes. Vous devez commencer le nom par une lettre minuscule et sans espaces.
 
-Le partage de code, de disques et d'espaces de travail (ex : deux personnes partageant la même machine virtuelle) est décrit plus en détail dans la section [Collaboration](4-Collaboration/Aperçu.md). Le partage de données via des buckets est décrit plus en détail dans **[Azure Blob Storage](./5-Stockage/AzureBlobStorage.md)**
-section.
+![Sélection d'un espace de noms](./images/name-your-server.png)
 
-### 💡 Aide
+# Sélectionnez le type de serveur de bloc-notes
 
-- Disque (également appelé Volumes sur l'écran de création de serveur de bloc-notes)
-- Conteneurs (Stockage Blob)
-- Lacs de données (à venir)
+Si vous ne savez pas quel type de serveur choisir, continuez à lire pour une brève description de chaque type.
 
-- 📗 Documentation du portail ETAA
-   - [https://statcan.github.io/aaw/](https://statcan.github.io/aaw/)
-- 📘 Documentation Kubeflow
-   - [https://www.kubeflow.org/docs/](https://www.kubeflow.org/docs/)
-- 🤝 Canal d'assistance Slack
-   - [https://statcan-etaa.slack.com](https://statcan-aaw.slack.com)
+![Sélectionnez votre type de serveur](./images/make-a-new-sas-server.png)
 
-## 🐱 Démos
+# JupyterLab
 
-Si vous avez besoin d'une session de démonstration d'intégration rapide, avez besoin d'aide ou avez des questions, veuillez nous contacter via notre [🤝 Canal d'assistance Slack](https://statcan-aaw.slack.com).
+Si vous n'avez pas besoin d'accéder à SAS, l'image JupyterLab est une alternative plus légère. L'image JupyterLab contient des environnements permettant de travailler avec R, Python et Julia.
 
-## Contribuant
+## Caractéristiques
 
-Si vous avez des bogues à signaler ou des fonctionnalités à demander, veuillez le faire via https://github.com/Statcan/daaas.
+Le serveur bloc-notes JupyterLab présente les fonctionnalités suivantes :
+
+- Langages de programmation Julia, Python, R
+- Environnement Pluto bloc-notes pour Julia
+- OpenM++
+- VS Code
+- Analyse de données avec [Pandas](https://pandas.pydata.org/)
+- Apprentissage automatique avec [Tensorflow](https://www.tensorflow.org/), [PyTorch](https://pytorch.org/) et [scikit-learn](https://scikit-learn.org/ stable/index.html)
+- Visualisation des données avec [Dash](https://dash.plotly.com/), [Plotly](https://plotly.com/python/) et [ggplot2](https://ggplot2.tidyverse.org/)
+
+## Capture d'écran
+
+Les sessions interactives peuvent être démarrées en cliquant sur l'une des icônes du lanceur, comme le montre la capture d'écran ci-dessous.
+
+![JupyterLab](./images/fullscreen-jupyter.png)
+
+# SAS
+
+Le serveur de bloc-notes SAS est le serveur bloc-notes basé sur JupyterLab le plus complet. Il possède plus de fonctionnalités que le  serveur de bloc-notes JupyterLab, y compris sa propre instance de RStudio. **C'est la meilleure option pour la plupart des gens.**
+
+## Caractéristiques
+
+- Tout dans le serveur JupyterLab bloc-notes ci-dessus
+- [Prise en charge du langage SAS](https://github.com/sassoftware/sas_kernel)
+-SAS Studio
+- [SASPy](https://sassoftware.github.io/saspy/)
+-RStudio
+
+## Capture d'écran
+
+Les sessions interactives peuvent être démarrées en cliquant sur l'une des icônes du lanceur, comme le montre la capture d'écran ci-dessous.
+
+![SAS](./images/fullscreen-sas.png)
+
+# RStudio
+
+Le serveur RStudio est destiné à ceux qui ont besoin d'un serveur RStudio léger sans le poids supplémentaire du SAS bloc-note Server. Le serveur RStudio n'est pas basé sur JupyterLab.
+
+## Caractéristiques
+
+l'EAA inclut par défaut quelques packages R utiles :
+
+- [Tidyverse](https://www.tidyverse.org/), un ensemble de packages R pour la science des données
+- [Tidymodels](https://www.tidymodels.org/), une collection de packages pour la modélisation et l'apprentissage automatique utilisant les principes de Tidyverse
+- [Caret](http://topepo.github.io/caret/index.html), abréviation de Classification And REgression Training, est un ensemble de fonctions qui tentent de rationaliser le processus de création de modèles prédictifs.
+- [Quarto](https://quarto.org/), un système de publication scientifique et technique open source
+
+## Capture d'écran
+
+![RStudio](./images/fullscreen-rstudio.png)
+
+# Ubuntu
+
+L'image Ubuntu est le serveur le plus avancé pour les applications de bureau spéciales.
+
+## Caractéristiques
+
+- PSPP
+- QGIS
+- VS Code
+- OpenM++
+- RStudio
+- Firefox
+
+## Capture d'écran
+
+![Bureau Ubuntu](./images/fullscreen-ubuntu.png)
+
+# Protégé B
+
+Sélectionnez Protégé B si vous en avez besoin. Votre serveur de bloc-notes n'aura pas accès à Internet si vous faites cela.
+
+![Sélection d'un espace de noms](./images/protected-b.png)
+
+# Lancement
+
+Une fois que votre serveur de bloc-notes a été nommé et que vous avez sélectionné le type de serveur de bloc-notes, vous pouvez appuyer sur **LAUNCH**.
+
+![Sélection d'un espace de noms](./images/launch.png)
