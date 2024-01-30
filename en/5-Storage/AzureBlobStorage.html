@@ -418,7 +418,7 @@
         
   
   <span class="md-ellipsis">
-    Introduction
+    Getting Started
   </span>
   
 
@@ -435,11 +435,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../0-Getting-Started/Getting-Started.html" class="md-nav__link">
+      <a href="../0-Getting-Started/Documentation.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Accessing the AAW
+    Documentation
   </span>
   
 
@@ -456,11 +456,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../0-Getting-Started/Documentation-and-Help.html" class="md-nav__link">
+      <a href="../0-Getting-Started/Help.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Documentation and Help
+    Help
   </span>
   
 
@@ -553,8 +553,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -583,8 +581,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -593,6 +589,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#azure-blob-storage-containers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Azure Blob Storage (Containers)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Azure Blob Storage (Containers)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#setup" class="md-nav__link">
     <span class="md-ellipsis">
       Setup
@@ -657,8 +663,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#pricing" class="md-nav__link">
     <span class="md-ellipsis">
       Pricing
@@ -666,8 +672,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#the-azure-storage-explorer" class="md-nav__link">
     <span class="md-ellipsis">
       The Azure Storage Explorer
@@ -675,13 +681,18 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#how-to-migrate-from-minio-to-azure-blob-storage" class="md-nav__link">
     <span class="md-ellipsis">
       How to Migrate from MinIO to Azure Blob Storage
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1937,8 +1948,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1947,6 +1956,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#azure-blob-storage-containers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Azure Blob Storage (Containers)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Azure Blob Storage (Containers)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#setup" class="md-nav__link">
     <span class="md-ellipsis">
       Setup
@@ -2011,8 +2030,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#pricing" class="md-nav__link">
     <span class="md-ellipsis">
       Pricing
@@ -2020,8 +2039,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#the-azure-storage-explorer" class="md-nav__link">
     <span class="md-ellipsis">
       The Azure Storage Explorer
@@ -2029,13 +2048,18 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#how-to-migrate-from-minio-to-azure-blob-storage" class="md-nav__link">
     <span class="md-ellipsis">
       How to Migrate from MinIO to Azure Blob Storage
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2060,7 +2084,9 @@
   
 
 
-<h1 id="azure-blob-storage-containers">Azure Blob Storage (Containers)<a class="headerlink" href="#azure-blob-storage-containers" title="Permanent link">&para;</a></h1>
+  <h1>Azure Blob Storage (Containers)</h1>
+
+<h2 id="azure-blob-storage-containers">Azure Blob Storage (Containers)<a class="headerlink" href="#azure-blob-storage-containers" title="Permanent link">&para;</a></h2>
 <p><a href="https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction">Azure Blob Storage</a> is Microsoft's object storage solution for the cloud. Blob Storage is optimized for storing massive amounts of unstructured data. Unstructured data is data that doesn't adhere to a particular data model or definition, such as text or binary data.</p>
 <p>Azure Blob Storage Containers have the following advantages over Kubeflow Volumes (Disks):</p>
 <ol>
@@ -2073,25 +2099,25 @@
 <p class="admonition-title">Azure Blob Storage containers and buckets have replaced MinIO storage and buckets.</p>
 <p>Users will be responsible for migrating data from MinIO Buckets to the Azure Storage folders. <a href="#how-to-migrate-from-minio-to-azure-blob-storage">Click here for instructions on how to migrate!</a>. For larger files, users may <a href="https://statcan-aaw.slack.com">contact AAW for assistance</a>.</p>
 </div>
-<h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h2>
-<h3 id="accessing-blob-container-from-jupyterlab">Accessing Blob Container from JupyterLab<a class="headerlink" href="#accessing-blob-container-from-jupyterlab" title="Permanent link">&para;</a></h3>
+<h3 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h3>
+<h4 id="accessing-blob-container-from-jupyterlab">Accessing Blob Container from JupyterLab<a class="headerlink" href="#accessing-blob-container-from-jupyterlab" title="Permanent link">&para;</a></h4>
 <p>The Blob CSI volumes are persisted under <code>~/buckets</code> when creating a Notebook Server. Files under <code>~/buckets</code> are backed by Blob storage. All AAW notebooks will have the <code>~/buckets</code> mounted to the file-system, making data accessible from everywhere.</p>
 <p>These folders can be used like any other - you can copy files to/from using the file browser, write from Python/R, etc. The only difference is that the data is being stored in the Blob storage container rather than on a local disk (and is thus accessible wherever you can access your Kubeflow notebook).</p>
 <p><img alt="Blob folders mounted as directories" src="../images/container-mount.png" /></p>
-<h4 id="unclassified-containers">Unclassified Containers<a class="headerlink" href="#unclassified-containers" title="Permanent link">&para;</a></h4>
+<h5 id="unclassified-containers">Unclassified Containers<a class="headerlink" href="#unclassified-containers" title="Permanent link">&para;</a></h5>
 <p>Unclassified blob storage containers will appear as follows in the <code>~/buckets</code> folder.</p>
 <p><img alt="Unclassified notebook folders mounted as directories in JupyterLab" src="../images/unclassified-mount.png" /></p>
-<h4 id="protected-b-containers">Protected B Containers<a class="headerlink" href="#protected-b-containers" title="Permanent link">&para;</a></h4>
+<h5 id="protected-b-containers">Protected B Containers<a class="headerlink" href="#protected-b-containers" title="Permanent link">&para;</a></h5>
 <p>Protected B blob storage containers will appear as follows in the <code>~/buckets</code> folder.</p>
 <p><img alt="Protected B notebooks mounted as directories in JupyterLab" src="../images/protectedb-mount.png" /></p>
-<h3 id="container-types">Container Types<a class="headerlink" href="#container-types" title="Permanent link">&para;</a></h3>
+<h4 id="container-types">Container Types<a class="headerlink" href="#container-types" title="Permanent link">&para;</a></h4>
 <p>The following Blob containers are available. Accessing all Blob containers is the same. The difference between containers is the storage type behind them:</p>
 <ul>
 <li><strong>aaw-unclassified:</strong> By default, use this one to store unclassified data.</li>
 <li><strong>aaw-protected-b:</strong> Use this one to store sensitive, Protected B data.</li>
 <li><strong>aaw-unclassified-ro:</strong> This classification is Protected B but read-only access. This is so users can view unclassified data within a Protected B notebook.</li>
 </ul>
-<h3 id="accessing-internal-data">Accessing Internal Data<a class="headerlink" href="#accessing-internal-data" title="Permanent link">&para;</a></h3>
+<h4 id="accessing-internal-data">Accessing Internal Data<a class="headerlink" href="#accessing-internal-data" title="Permanent link">&para;</a></h4>
 <p>Accessing internal data uses the DAS common storage connection which has use for internal and external users that require access to unclassified or Protected B data. The following containers can be provisioned:</p>
 <ul>
 <li><strong>external-unclassified:</strong> Unclassified and accessible by both StatCan and non-Statcan employees.</li>
@@ -2102,16 +2128,16 @@
 <p>The above containers follow the same convention as the AAW containers in terms of data, however there is a layer of isolation between StatCan employees and non-StatCan employees. Non-Statcan employees are only allowed in <strong>external</strong> containers, while StatCan employees can have access to any container. </p>
 <p>AAW has an integration with the FAIR Data Infrastructure team that allows users to transfer unclassified and Protected B data to Azure Storage Accounts, thus allowing users to access this data from Notebook Servers.</p>
 <p>Please reach out to the FAIR Data Infrastructure team if you have a use case for this data.</p>
-<h2 id="pricing">Pricing<a class="headerlink" href="#pricing" title="Permanent link">&para;</a></h2>
+<h3 id="pricing">Pricing<a class="headerlink" href="#pricing" title="Permanent link">&para;</a></h3>
 <!-- prettier-ignore -->
 <div class="admonition info">
 <p class="admonition-title">Pricing models are based on CPU and Memory usage</p>
 <p>Pricing is covered by KubeCost for user namespaces (In Kubeflow at the bottom of the Notebooks tab).</p>
 </div>
 <p>In general, Blob Storage is much cheaper than <a href="https://azure.microsoft.com/en-us/pricing/details/managed-disks/">Azure Manage Disks</a> and has better I/O than managed SSD.</p>
-<h2 id="the-azure-storage-explorer">The Azure Storage Explorer<a class="headerlink" href="#the-azure-storage-explorer" title="Permanent link">&para;</a></h2>
+<h3 id="the-azure-storage-explorer">The Azure Storage Explorer<a class="headerlink" href="#the-azure-storage-explorer" title="Permanent link">&para;</a></h3>
 <p>Our friends over at the Collaborative Analytics Environment (CAE) have some documentation on accessing your Azure Blob Storage from your AVD using the <a href="https://statcan.github.io/cae-eac/en/AzureStorageExplorer/">Azure Storage Explorer</a>.</p>
-<h2 id="how-to-migrate-from-minio-to-azure-blob-storage">How to Migrate from MinIO to Azure Blob Storage<a class="headerlink" href="#how-to-migrate-from-minio-to-azure-blob-storage" title="Permanent link">&para;</a></h2>
+<h3 id="how-to-migrate-from-minio-to-azure-blob-storage">How to Migrate from MinIO to Azure Blob Storage<a class="headerlink" href="#how-to-migrate-from-minio-to-azure-blob-storage" title="Permanent link">&para;</a></h3>
 <p>First, <code>source</code> the environmental variables stored in your secrets vault. You will either <code>source</code> from <strong>minio-gateway</strong> or <strong>fdi-gateway</strong> depending on where your data was ingested:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>source /vault/secrets/fdi-gateway-protected-b
 </span></code></pre></div>

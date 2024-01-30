@@ -20,7 +20,7 @@
     
     
       
-        <title>Selecting an Image for your Notebook Server - Advanced Analytics Workspace</title>
+        <title>Selecting an Image - Advanced Analytics Workspace</title>
       
     
     
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Selecting an Image for your Notebook Server
+              Selecting an Image
             
           </span>
         </div>
@@ -412,7 +412,7 @@
         
   
   <span class="md-ellipsis">
-    Introduction
+    Getting Started
   </span>
   
 
@@ -429,11 +429,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../0-Getting-Started/Getting-Started.html" class="md-nav__link">
+      <a href="../0-Getting-Started/Documentation.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Accessing the AAW
+    Documentation
   </span>
   
 
@@ -450,11 +450,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../0-Getting-Started/Documentation-and-Help.html" class="md-nav__link">
+      <a href="../0-Getting-Started/Help.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Documentation and Help
+    Help
   </span>
   
 
@@ -1796,8 +1796,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1806,6 +1804,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#selecting-an-image-for-your-notebook-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selecting an Image for your Notebook Server
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Selecting an Image for your Notebook Server">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#jupyter-notebooks" class="md-nav__link">
     <span class="md-ellipsis">
       Jupyter Notebooks
@@ -1813,8 +1821,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#rstudio" class="md-nav__link">
     <span class="md-ellipsis">
       RStudio
@@ -1822,13 +1830,18 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#remote-desktop" class="md-nav__link">
     <span class="md-ellipsis">
       Remote-Desktop
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1853,7 +1866,9 @@
   
 
 
-<h1 id="selecting-an-image-for-your-notebook-server">Selecting an Image for your Notebook Server<a class="headerlink" href="#selecting-an-image-for-your-notebook-server" title="Permanent link">&para;</a></h1>
+  <h1>Selecting an Image</h1>
+
+<h2 id="selecting-an-image-for-your-notebook-server">Selecting an Image for your Notebook Server<a class="headerlink" href="#selecting-an-image-for-your-notebook-server" title="Permanent link">&para;</a></h2>
 <p>Depending on your project or use case of the Notebook Server, some images may be more suitable than others. The following will go through the main features of each to help you pick the most appropriate image for you.</p>
 <p>When selecting an image, you have 3 main options:</p>
 <ul>
@@ -1861,7 +1876,7 @@
 <li>RStudio</li>
 <li>Remote Desktop</li>
 </ul>
-<h2 id="jupyter-notebooks">Jupyter Notebooks<a class="headerlink" href="#jupyter-notebooks" title="Permanent link">&para;</a></h2>
+<h3 id="jupyter-notebooks">Jupyter Notebooks<a class="headerlink" href="#jupyter-notebooks" title="Permanent link">&para;</a></h3>
 <p><a href="https://jupyter.org/">Jupyter Notebooks</a> are used to create and share interactive documents that contain a mix of live code, visualizations, and text. These can be written in <code>Python</code>, <code>Julia</code>, or <code>R</code>.</p>
 <p><center>
 <img alt="Jupyter Notebooks" src="../images/jupyter_in_action.png" />
@@ -1876,10 +1891,10 @@ modelling, machine learning and more.</p>
 <p>For the <code>jupyterlab-pytorch</code> image, the PyTorch packages (torch, torchvision, and torchaudio) are installed in the <code>torch</code> conda environment. You must activate this environment to use PyTorch.</p>
 <p>For the <code>jupyterlab-cpu</code>, <code>jupyterlab-tensorflow</code>, and <code>jupyterlab-pytorch</code> images, in the default shell the <code>conda activate</code> command may not work. This is due to the environment not being initialized properly. In this case run <code>bash</code>, you should see the AAW logo and a few instructions appear. After this <code>conda activate</code> should work properly. If you see the AAW logo on startup it means the environment is correctly initialized and <code>conda activate</code> should work properly. A fix for this bug is in the works, once this is fixed this paragraph will be removed.</p>
 <p>Each image comes pre-loaded with VS Code in the browser if you prefer a full IDE experience.</p>
-<h2 id="rstudio">RStudio<a class="headerlink" href="#rstudio" title="Permanent link">&para;</a></h2>
+<h3 id="rstudio">RStudio<a class="headerlink" href="#rstudio" title="Permanent link">&para;</a></h3>
 <p><strong><a href="../RStudio/">RStudio</a></strong> gives you an integrated development environment specifically for <code>R</code>. If you're coding in <code>R</code>, this is typically the Notebook Server to use. Use the <code>rstudio</code> image to get an RStudio environment.</p>
 <p><img alt="RStudio" src="../images/rstudio_visual.png" /></p>
-<h2 id="remote-desktop">Remote-Desktop<a class="headerlink" href="#remote-desktop" title="Permanent link">&para;</a></h2>
+<h3 id="remote-desktop">Remote-Desktop<a class="headerlink" href="#remote-desktop" title="Permanent link">&para;</a></h3>
 <p>For a full Ubuntu desktop experience, use the remote desktop image. It comes pre-loaded with Python, R and Geomatics tooling, but are delivered in a typical desktop experience that also comes with Firefox, VS Code, and open office tools. The operating system is <strong><a href="https://ubuntu.com/about">Ubuntu</a></strong> 22.04 with the <strong><a href="https://www.xfce.org/about">XFCE</a></strong> desktop environment.</p>
 <p><img alt="Screenshot of the Virtual Desktop" src="../images/rd_desktop.png" /></p>
 

@@ -418,7 +418,7 @@
         
   
   <span class="md-ellipsis">
-    Introduction
+    Getting Started
   </span>
   
 
@@ -435,11 +435,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../0-Getting-Started/Getting-Started.html" class="md-nav__link">
+      <a href="../0-Getting-Started/Documentation.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Accessing the AAW
+    Documentation
   </span>
   
 
@@ -456,11 +456,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../0-Getting-Started/Documentation-and-Help.html" class="md-nav__link">
+      <a href="../0-Getting-Started/Help.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Documentation and Help
+    Help
   </span>
   
 
@@ -1442,8 +1442,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -1472,8 +1470,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1482,6 +1478,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#statcan-protected-b-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Statcan Protected B Data
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Statcan Protected B Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#cloud-storage" class="md-nav__link">
     <span class="md-ellipsis">
       Cloud Storage
@@ -1506,6 +1512,11 @@
       Data Lakes (Coming Soon)
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1877,8 +1888,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1887,6 +1896,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#statcan-protected-b-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Statcan Protected B Data
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Statcan Protected B Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#cloud-storage" class="md-nav__link">
     <span class="md-ellipsis">
       Cloud Storage
@@ -1918,6 +1937,11 @@
     </nav>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
     </ul>
   
@@ -1940,7 +1964,9 @@
   
 
 
-<h1 id="statcan-protected-b-data">Statcan Protected B Data<a class="headerlink" href="#statcan-protected-b-data" title="Permanent link">&para;</a></h1>
+  <h1>Storing ML Models</h1>
+
+<h2 id="statcan-protected-b-data">Statcan Protected B Data<a class="headerlink" href="#statcan-protected-b-data" title="Permanent link">&para;</a></h2>
 <!-- prettier-ignore -->
 <div class="admonition info">
 <p class="admonition-title">Protected B</p>
@@ -1951,7 +1977,7 @@
 <p>The AAW platform provides a protected cloud storage environment that is designed to meet the most stringent data security and privacy requirements. The storage environment is protected by industry-standard encryption and access controls, which ensures that only authorized personnel can access sensitive data. This protects against unauthorized access, data breaches, and other security threats.</p>
 <p>In addition to its robust security features, the AAW cloud storage environment is also highly scalable and flexible. This means that data scientists and machine learning engineers can easily scale their storage needs as their datasets and model sizes grow. This enables them to store and manage large volumes of data and models without having to worry about storage limitations or performance bottlenecks.</p>
 <p>Storing machine learning models in a protected cloud storage environment on the Advanced Analytics Workspace provides a secure, scalable, and flexible solution for managing and protecting sensitive data. By leveraging the cloud storage capabilities provided by the AAW platform, data scientists and machine learning engineers can focus on building and deploying their models with confidence, knowing that their data is protected and secure.</p>
-<h2 id="cloud-storage">Cloud Storage<a class="headerlink" href="#cloud-storage" title="Permanent link">&para;</a></h2>
+<h3 id="cloud-storage">Cloud Storage<a class="headerlink" href="#cloud-storage" title="Permanent link">&para;</a></h3>
 <!-- prettier-ignore -->
 <div class="admonition info">
 <p class="admonition-title">Cloud Storage Advantages</p>
@@ -1966,12 +1992,12 @@
 <li>Data Lakes (coming soon)</li>
 </ul>
 <p>Depending on your use case, either disk or bucket may be most suitable. Our <a href="../5-Storage/Overview.html">storage overview</a> will help you compare them.</p>
-<h3 id="disks">Disks<a class="headerlink" href="#disks" title="Permanent link">&para;</a></h3>
+<h4 id="disks">Disks<a class="headerlink" href="#disks" title="Permanent link">&para;</a></h4>
 <p><center>
     <a href="../5-Storage/KubeflowVolumes.html"><img alt="Disks" src="../images/Disks.PNG" /></a>
 </center>
 <strong><a href="../5-Storage/KubeflowVolumes.html">Disks</a></strong> are added to your notebook server by adding Data Volumes.</p>
-<h3 id="data-lakes-coming-soon">Data Lakes (Coming Soon)<a class="headerlink" href="#data-lakes-coming-soon" title="Permanent link">&para;</a></h3>
+<h4 id="data-lakes-coming-soon">Data Lakes (Coming Soon)<a class="headerlink" href="#data-lakes-coming-soon" title="Permanent link">&para;</a></h4>
 <p>A data lake is a central repository that allows you to store all your structured and unstructured data at any scale. It's a cost-effective way to store and manage all types of data, from raw data to processed data, and it's an essential tool for data scientists.</p>
 <p>One of the primary advantages of a data lake is its flexibility. It allows you to store all types of data without the need to define a schema in advance, which is especially useful when dealing with unstructured data. This flexibility allows data scientists to easily explore, experiment, and extract insights from their data without being constrained by the limitations of a traditional relational database.</p>
 <p>Data lakes also enable data scientists to centralize their data, making it easier to manage and analyze large volumes of data from various sources. With a data lake, data scientists can easily ingest and store data from a variety of sources, such as databases, cloud storage, and third-party APIs. Additionally, data lakes often provide features for data governance, metadata management, and access control, which helps ensure the data is of high quality and compliant with relevant regulations.</p>

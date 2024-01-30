@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://statcan.github.io/aaw/en/5-Storage/Overview.html">
       
       
-        <link rel="prev" href="../0-Getting-Started/Documentation-and-Help.html">
+        <link rel="prev" href="../0-Getting-Started/Help.html">
       
       
         <link rel="next" href="AzureBlobStorage.html">
@@ -418,7 +418,7 @@
         
   
   <span class="md-ellipsis">
-    Introduction
+    Getting Started
   </span>
   
 
@@ -435,11 +435,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../0-Getting-Started/Getting-Started.html" class="md-nav__link">
+      <a href="../0-Getting-Started/Documentation.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Accessing the AAW
+    Documentation
   </span>
   
 
@@ -456,11 +456,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../0-Getting-Started/Documentation-and-Help.html" class="md-nav__link">
+      <a href="../0-Getting-Started/Help.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Documentation and Help
+    Help
   </span>
   
 
@@ -532,8 +532,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -562,8 +560,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -572,6 +568,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#storage-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storage overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Storage overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#kubeflow-volumes-disks" class="md-nav__link">
     <span class="md-ellipsis">
       Kubeflow Volumes (Disks)
@@ -603,8 +609,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#azure-blob-storage-containers" class="md-nav__link">
     <span class="md-ellipsis">
       Azure Blob Storage (Containers)
@@ -612,13 +618,18 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#choose-your-storage" class="md-nav__link">
     <span class="md-ellipsis">
       Choose your storage
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1895,8 +1906,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1905,6 +1914,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#storage-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storage overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Storage overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#kubeflow-volumes-disks" class="md-nav__link">
     <span class="md-ellipsis">
       Kubeflow Volumes (Disks)
@@ -1936,8 +1955,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#azure-blob-storage-containers" class="md-nav__link">
     <span class="md-ellipsis">
       Azure Blob Storage (Containers)
@@ -1945,13 +1964,18 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#choose-your-storage" class="md-nav__link">
     <span class="md-ellipsis">
       Choose your storage
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1976,17 +2000,19 @@
   
 
 
-<h1 id="storage-overview">Storage overview<a class="headerlink" href="#storage-overview" title="Permanent link">&para;</a></h1>
+  <h1>Overview</h1>
+
+<h2 id="storage-overview">Storage overview<a class="headerlink" href="#storage-overview" title="Permanent link">&para;</a></h2>
 <p>Several storage options are available for AAW users to access and import their data. Below is a description of each type. There are separate documentation pages for connecting to each storage type.</p>
-<h2 id="kubeflow-volumes-disks">Kubeflow Volumes (Disks)<a class="headerlink" href="#kubeflow-volumes-disks" title="Permanent link">&para;</a></h2>
+<h3 id="kubeflow-volumes-disks">Kubeflow Volumes (Disks)<a class="headerlink" href="#kubeflow-volumes-disks" title="Permanent link">&para;</a></h3>
 <p>Kubeflow uses virtual disks called Volumes. You will encounter them on the server notebook creation screen. These drives come in two varieties, called Workspace Volumes and Data Volumes. Data and workspace volumes can be reused and mounted on different notebook servers, but not at the same time.</p>
-<h3 id="workspace-volumes">Workspace volumes<a class="headerlink" href="#workspace-volumes" title="Permanent link">&para;</a></h3>
+<h4 id="workspace-volumes">Workspace volumes<a class="headerlink" href="#workspace-volumes" title="Permanent link">&para;</a></h4>
 <p>Workspace volumes are similar in concept and function to your laptop's hard drive, it's where all software is stored and it's the default storage device for all your stuff.</p>
-<h3 id="data-volumes">Data volumes<a class="headerlink" href="#data-volumes" title="Permanent link">&para;</a></h3>
+<h4 id="data-volumes">Data volumes<a class="headerlink" href="#data-volumes" title="Permanent link">&para;</a></h4>
 <p>If you need more storage, a data volume may be required. This is conceptually similar to connecting a high-capacity USB hard drive to your PC.</p>
-<h2 id="azure-blob-storage-containers">Azure Blob Storage (Containers)<a class="headerlink" href="#azure-blob-storage-containers" title="Permanent link">&para;</a></h2>
+<h3 id="azure-blob-storage-containers">Azure Blob Storage (Containers)<a class="headerlink" href="#azure-blob-storage-containers" title="Permanent link">&para;</a></h3>
 <p>If you need to collaborate with others, Azure Blob Storage (as provided by FDI) may be the best option for you and your data. See #choosing-your-storage for more information.</p>
-<h2 id="choose-your-storage">Choose your storage<a class="headerlink" href="#choose-your-storage" title="Permanent link">&para;</a></h2>
+<h3 id="choose-your-storage">Choose your storage<a class="headerlink" href="#choose-your-storage" title="Permanent link">&para;</a></h3>
 <p>Depending on your and your project's unique needs and requirements, Kubeflow Volumes or Azure Blob Storage (or both) may be best suited:</p>
 <table>
 <thead>

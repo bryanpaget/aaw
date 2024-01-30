@@ -418,7 +418,7 @@
         
   
   <span class="md-ellipsis">
-    Introduction
+    Getting Started
   </span>
   
 
@@ -435,11 +435,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../0-Getting-Started/Getting-Started.html" class="md-nav__link">
+      <a href="../0-Getting-Started/Documentation.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Accessing the AAW
+    Documentation
   </span>
   
 
@@ -456,11 +456,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../0-Getting-Started/Documentation-and-Help.html" class="md-nav__link">
+      <a href="../0-Getting-Started/Help.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Documentation and Help
+    Help
   </span>
   
 
@@ -1138,8 +1138,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -1168,8 +1166,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1178,6 +1174,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#gitlab-setup-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitLab Setup Guide
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GitLab Setup Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#personalizing-git" class="md-nav__link">
     <span class="md-ellipsis">
       Personalizing Git
@@ -1209,8 +1215,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#create-a-personal-access-token-pat" class="md-nav__link">
     <span class="md-ellipsis">
       Create a Personal Access Token (PAT)
@@ -1260,13 +1266,18 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#supply-the-generated-token-as-your-gitlab-password" class="md-nav__link">
     <span class="md-ellipsis">
       Supply the Generated Token as Your GitLab Password
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1937,8 +1948,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1947,6 +1956,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#gitlab-setup-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitLab Setup Guide
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GitLab Setup Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#personalizing-git" class="md-nav__link">
     <span class="md-ellipsis">
       Personalizing Git
@@ -1978,8 +1997,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#create-a-personal-access-token-pat" class="md-nav__link">
     <span class="md-ellipsis">
       Create a Personal Access Token (PAT)
@@ -2029,13 +2048,18 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#supply-the-generated-token-as-your-gitlab-password" class="md-nav__link">
     <span class="md-ellipsis">
       Supply the Generated Token as Your GitLab Password
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2060,29 +2084,31 @@
   
 
 
-<h1 id="gitlab-setup-guide">GitLab Setup Guide<a class="headerlink" href="#gitlab-setup-guide" title="Permanent link">&para;</a></h1>
+  <h1>Gitlab</h1>
+
+<h2 id="gitlab-setup-guide">GitLab Setup Guide<a class="headerlink" href="#gitlab-setup-guide" title="Permanent link">&para;</a></h2>
 <p>Welcome to GitLab! GitLab is a powerful platform that facilitates collaborative development using Git. Before diving into the world of repositories, let's ensure your Git configuration aligns with your GitLab identity. Below are instructions on personalizing <code>git</code> and creating a Personal Access Token (PAT) for seamless interaction with GitLab repositories.</p>
-<h2 id="personalizing-git">Personalizing Git<a class="headerlink" href="#personalizing-git" title="Permanent link">&para;</a></h2>
+<h3 id="personalizing-git">Personalizing Git<a class="headerlink" href="#personalizing-git" title="Permanent link">&para;</a></h3>
 <p>When using <code>git</code>, it's essential to set up your identity. Open a new terminal session and run the following commands to configure your name and email associated with GitLab:</p>
-<h3 id="user-name">User Name<a class="headerlink" href="#user-name" title="Permanent link">&para;</a></h3>
+<h4 id="user-name">User Name<a class="headerlink" href="#user-name" title="Permanent link">&para;</a></h4>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;Your Name&quot;</span>
 </span></code></pre></div>
-<h3 id="email">Email<a class="headerlink" href="#email" title="Permanent link">&para;</a></h3>
+<h4 id="email">Email<a class="headerlink" href="#email" title="Permanent link">&para;</a></h4>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;youremail@yourdomain.com&quot;</span>
 </span></code></pre></div>
 <p>Now, whenever you interact with GitLab, <code>git</code> will use this information to identify you.</p>
-<h2 id="create-a-personal-access-token-pat">Create a Personal Access Token (PAT)<a class="headerlink" href="#create-a-personal-access-token-pat" title="Permanent link">&para;</a></h2>
+<h3 id="create-a-personal-access-token-pat">Create a Personal Access Token (PAT)<a class="headerlink" href="#create-a-personal-access-token-pat" title="Permanent link">&para;</a></h3>
 <p>To interact (push, pull) with any Statistics Canada GitLab repository, you need to create a Personal Access Token. Follow these steps:</p>
 <ol>
 <li><a href="https://gitlab.k8s.cloud.statcan.ca/">Go to GitLab</a>.</li>
 <li>Click your <strong>Profile Icon</strong> in the upper left corner.</li>
 <li>Select <strong>Preferences</strong> and then <strong>Access Tokens</strong>.</li>
 </ol>
-<h3 id="profile-icon">Profile Icon<a class="headerlink" href="#profile-icon" title="Permanent link">&para;</a></h3>
+<h4 id="profile-icon">Profile Icon<a class="headerlink" href="#profile-icon" title="Permanent link">&para;</a></h4>
 <p><img alt="Profile Icon" src="../images/gitlab-1.png" /></p>
-<h3 id="access-tokens">Access Tokens<a class="headerlink" href="#access-tokens" title="Permanent link">&para;</a></h3>
+<h4 id="access-tokens">Access Tokens<a class="headerlink" href="#access-tokens" title="Permanent link">&para;</a></h4>
 <p><img alt="Access Tokens" src="../images/gitlab-2.png" /></p>
-<h3 id="personal-access-token-form">Personal Access Token Form<a class="headerlink" href="#personal-access-token-form" title="Permanent link">&para;</a></h3>
+<h4 id="personal-access-token-form">Personal Access Token Form<a class="headerlink" href="#personal-access-token-form" title="Permanent link">&para;</a></h4>
 <p><img alt="Personal Access Token Form" src="../images/gitlab-3.png" /></p>
 <ul>
 <li>Complete the form by providing a name for the token (for easy identification), setting the token expiration date, and granting permissions (e.g., <code>read_repository</code> and <code>write_repository</code>).</li>
@@ -2090,7 +2116,7 @@
 <li>If you do not enter an expiry date, the expiry date is automatically set to 365 days later than the current date.</li>
 <li>By default, this date can be a maximum of 365 days later than the current date.</li>
 </ul>
-<h3 id="the-token">The Token<a class="headerlink" href="#the-token" title="Permanent link">&para;</a></h3>
+<h4 id="the-token">The Token<a class="headerlink" href="#the-token" title="Permanent link">&para;</a></h4>
 <!-- prettier-ignore -->
 <div class="admonition warning">
 <p class="admonition-title">Keep your secrets to yourself!</p>
@@ -2101,7 +2127,7 @@
 </div>
 <p><img alt="Token" src="../images/gitlab-4.png" /></p>
 <p>The generated token will be copy-able at the top after clicking <strong>Create personal access token</strong>. Copy and securely save this token as it won't be retrievable later.</p>
-<h2 id="supply-the-generated-token-as-your-gitlab-password">Supply the Generated Token as Your GitLab Password<a class="headerlink" href="#supply-the-generated-token-as-your-gitlab-password" title="Permanent link">&para;</a></h2>
+<h3 id="supply-the-generated-token-as-your-gitlab-password">Supply the Generated Token as Your GitLab Password<a class="headerlink" href="#supply-the-generated-token-as-your-gitlab-password" title="Permanent link">&para;</a></h3>
 <p>Use the generated token as your GitLab password when prompted. Here's an example of how to incorporate the token into your commands:</p>
 <p><img alt="Example Commands" src="../images/gitlab-5.png" /></p>
 <p>We can use git-credential-cache to cache our username and password for a time period. Simply enter the following in your CLI (terminal or command prompt):</p>

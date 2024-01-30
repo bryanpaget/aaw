@@ -418,7 +418,7 @@
         
   
   <span class="md-ellipsis">
-    Introduction
+    Getting Started
   </span>
   
 
@@ -435,11 +435,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../0-Getting-Started/Getting-Started.html" class="md-nav__link">
+      <a href="../0-Getting-Started/Documentation.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Accessing the AAW
+    Documentation
   </span>
   
 
@@ -456,11 +456,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../0-Getting-Started/Documentation-and-Help.html" class="md-nav__link">
+      <a href="../0-Getting-Started/Help.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Documentation and Help
+    Help
   </span>
   
 
@@ -574,8 +574,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -604,8 +602,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -614,6 +610,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#kubeflow-volumes-disks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kubeflow Volumes (Disks)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kubeflow Volumes (Disks)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#setup" class="md-nav__link">
     <span class="md-ellipsis">
       Setup
@@ -621,8 +627,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#once-youve-got-the-basics" class="md-nav__link">
     <span class="md-ellipsis">
       Once you've got the basics...
@@ -630,8 +636,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#deleting-disk-storage" class="md-nav__link">
     <span class="md-ellipsis">
       Deleting Disk Storage
@@ -639,13 +645,18 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#pricing" class="md-nav__link">
     <span class="md-ellipsis">
       Pricing
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1880,8 +1891,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1890,6 +1899,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#kubeflow-volumes-disks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kubeflow Volumes (Disks)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kubeflow Volumes (Disks)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#setup" class="md-nav__link">
     <span class="md-ellipsis">
       Setup
@@ -1897,8 +1916,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#once-youve-got-the-basics" class="md-nav__link">
     <span class="md-ellipsis">
       Once you've got the basics...
@@ -1906,8 +1925,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#deleting-disk-storage" class="md-nav__link">
     <span class="md-ellipsis">
       Deleting Disk Storage
@@ -1915,13 +1934,18 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#pricing" class="md-nav__link">
     <span class="md-ellipsis">
       Pricing
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1946,9 +1970,11 @@
   
 
 
-<h1 id="kubeflow-volumes-disks">Kubeflow Volumes (Disks)<a class="headerlink" href="#kubeflow-volumes-disks" title="Permanent link">&para;</a></h1>
+  <h1>Kubeflow Volumes (Disks)</h1>
+
+<h2 id="kubeflow-volumes-disks">Kubeflow Volumes (Disks)<a class="headerlink" href="#kubeflow-volumes-disks" title="Permanent link">&para;</a></h2>
 <p>Kubeflow Volumes are similar in concept to the hard disk drives you are used to on your Windows, Mac or Linux Desktop. Kubeflow Volumes are sometimes just called disks and are backed by fast solid state drives (SSDs) under the hood!</p>
-<h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h2>
+<h3 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h3>
 <p>When creating your notebook server, you request disks by adding Data Volumes to your notebook server (pictured below, with go to <code>Advanced Options</code>). They are automatically mounted at the directory (<code>Mount Point</code>) you choose, and serve as a simple and reliable way to preserve data attached to a Notebook Server.</p>
 <p><img alt="Adding an existing volume to a new notebook server" src="../images/kubeflow_existing_volume.png" /></p>
 <!-- prettier-ignore -->
@@ -1956,12 +1982,12 @@
 <p class="admonition-title">You pay for all disks you own, whether they're attached to a Notebook Server or not.</p>
 <p>As soon as you create a disk, you're <a href="#pricing">paying</a> for it until it is <a href="#deleting-disk-storage">deleted</a>, even if it's original Notebook Server is deleted.  See <a href="#deleting-disk-storage">Deleting Disk Storage</a> for more info.</p>
 </div>
-<h2 id="once-youve-got-the-basics">Once you've got the basics...<a class="headerlink" href="#once-youve-got-the-basics" title="Permanent link">&para;</a></h2>
+<h3 id="once-youve-got-the-basics">Once you've got the basics...<a class="headerlink" href="#once-youve-got-the-basics" title="Permanent link">&para;</a></h3>
 <p>When you delete your Notebook Server, your disks <strong>are not deleted</strong>. This let's you reuse that same disk (with all its contents) on a new Notebook Server later (as shown above with <code>Type = Existing</code> and the <code>Name</code> set to the volume you want to reuse). If you're done with the disk and it's contents, <a href="#deleting-disk-storage">delete it</a>.</p>
-<h2 id="deleting-disk-storage">Deleting Disk Storage<a class="headerlink" href="#deleting-disk-storage" title="Permanent link">&para;</a></h2>
+<h3 id="deleting-disk-storage">Deleting Disk Storage<a class="headerlink" href="#deleting-disk-storage" title="Permanent link">&para;</a></h3>
 <p>To see your disks, check the Notebook Volumes section of the Notebook Server page (shown below). You can delete any unattached disk (icon on the left) by clicking the trash can icon.</p>
 <p><img alt="Delete an unattached volume from the Notebook Server screen" src="../images/kubeflow_delete_disk.png" /></p>
-<h2 id="pricing">Pricing<a class="headerlink" href="#pricing" title="Permanent link">&para;</a></h2>
+<h3 id="pricing">Pricing<a class="headerlink" href="#pricing" title="Permanent link">&para;</a></h3>
 <!-- prettier-ignore -->
 <details class="info">
 <summary>Pricing models are tentative and may change.</summary>

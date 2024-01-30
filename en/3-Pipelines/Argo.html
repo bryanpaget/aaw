@@ -418,7 +418,7 @@
         
   
   <span class="md-ellipsis">
-    Introduction
+    Getting Started
   </span>
   
 
@@ -435,11 +435,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../0-Getting-Started/Getting-Started.html" class="md-nav__link">
+      <a href="../0-Getting-Started/Documentation.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Accessing the AAW
+    Documentation
   </span>
   
 
@@ -456,11 +456,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../0-Getting-Started/Documentation-and-Help.html" class="md-nav__link">
+      <a href="../0-Getting-Started/Help.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Documentation and Help
+    Help
   </span>
   
 
@@ -2092,7 +2092,7 @@
 
   <h1>Argo</h1>
 
-<h2 id="argo-workflows">Argo Workflows<a class="headerlink" href="#argo-workflows" title="Permanent link">&para;</a></h2>
+<h3 id="argo-workflows">Argo Workflows<a class="headerlink" href="#argo-workflows" title="Permanent link">&para;</a></h3>
 <p><img alt="Argo Workflows Squid Logo" src="../images/argo.png" /></p>
 <p><strong><a href="https://argoproj.github.io/argo-workflows/">Argo Workflows</a></strong>  is an open source container-native workflow engine for orchestrating parallel jobs on Kubernetes. Argo Workflows is implemented as a Kubernetes CRD (Custom Resource Definition). It is particularly well-suited for use in data science workflows and machine learning workflows.</p>
 <p>Full documentation can be found <a href="https://argoproj.github.io/argo-workflows/walk-through/">here</a>. </p>
@@ -2112,7 +2112,7 @@
 </center></p>
 </div>
 <p>Below is an example use-case of Argo Workflows, where we train a machine learning model using Argo Workflows on the AAW.</p>
-<h4 id="1-write-a-script-to-train-your-model">1. Write a script to train your model<a class="headerlink" href="#1-write-a-script-to-train-your-model" title="Permanent link">&para;</a></h4>
+<h5 id="1-write-a-script-to-train-your-model">1. Write a script to train your model<a class="headerlink" href="#1-write-a-script-to-train-your-model" title="Permanent link">&para;</a></h5>
 <p>Here's an example script that trains a logistic regression model on the iris dataset. Don't forget to view the code from each language below.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Python</label><label for="__tabbed_1_2">R</label></div>
 <div class="tabbed-content">
@@ -2258,7 +2258,7 @@
 </div>
 </div>
 </div>
-<h4 id="2-write-a-dockerfile-to-run-your-code">2. Write a Dockerfile to run your code<a class="headerlink" href="#2-write-a-dockerfile-to-run-your-code" title="Permanent link">&para;</a></h4>
+<h5 id="2-write-a-dockerfile-to-run-your-code">2. Write a Dockerfile to run your code<a class="headerlink" href="#2-write-a-dockerfile-to-run-your-code" title="Permanent link">&para;</a></h5>
 <p>You'll need a Dockerfile that includes all necessary dependencies for training your machine learning model. This could include</p>
 <ul>
 <li>packages like<ul>
@@ -2336,7 +2336,7 @@
 </div>
 </div>
 </div>
-<h4 id="3-write-your-workflow-in-yaml">3. Write your workflow in YAML<a class="headerlink" href="#3-write-your-workflow-in-yaml" title="Permanent link">&para;</a></h4>
+<h5 id="3-write-your-workflow-in-yaml">3. Write your workflow in YAML<a class="headerlink" href="#3-write-your-workflow-in-yaml" title="Permanent link">&para;</a></h5>
 <p>YAML is Yet Another Markup Language and you'll need to write down the steps of your training pipeline in an Argo Workflows YAML file. This file should include reference to the Dockerfile you created in <a href="#2-write-a-dockerfile-to-run-your-code">Step 2</a>, as well as any input data and output data you'll be working with.</p>
 <p>Here is an example YAML file for a simple machine learning pipeline that trains a logistic regression model on the iris dataset. The only real difference between the <code>Python</code> and <code>R</code> versions is the command <code>command: ["python", "train.py"]</code> vs <code>command: ["Rscript", "train.R"]</code> and the models are stored in different formats, <code>pkl</code> for <code>python</code> and <code>rds</code> for <code>R</code>.</p>
 <p>The YAML file defines a single step called <code>train</code> that runs a script called <code>train.py</code> or <code>train.R</code> in the Docker image <code>machine-learning:v1</code>. The script takes an input dataset file, specified by a parameter called <code>dataset</code>, and outputs a trained model file to an output artifact called <code>model.pkl</code> or <code>model.rds</code> depending on the language used.</p>
@@ -2428,19 +2428,19 @@
 </div>
 </div>
 </div>
-<h4 id="4-submit-the-workflow-using-the-argo-workflows-cli">4. Submit the workflow using the Argo Workflows CLI<a class="headerlink" href="#4-submit-the-workflow-using-the-argo-workflows-cli" title="Permanent link">&para;</a></h4>
+<h5 id="4-submit-the-workflow-using-the-argo-workflows-cli">4. Submit the workflow using the Argo Workflows CLI<a class="headerlink" href="#4-submit-the-workflow-using-the-argo-workflows-cli" title="Permanent link">&para;</a></h5>
 <p>To run the above workflow, you will first need to push the Dockerfile to our container registry and then submit the YAML file using the <code>argo submit</code> command. Once the pipeline has completed, you can retrieve the trained model file by downloading the output artifact from the <code>argo logs</code> command.</p>
 <div class="language-bash highlight"><span class="filename">Terminal</span><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>$<span class="w"> </span>argo<span class="w"> </span>submit<span class="w"> </span>workflow.yaml<span class="w">       </span><span class="c1"># submit a workflow spec to Kubernetes</span>
 </span></code></pre></div>
 <p>It's also possible to submit argo workflows from within workflows using SDKs and API calls (it's just another web-service!). See this <a href="#examples-using-argo-workflows-based-sdks">section</a>.</p>
-<h4 id="5-monitor-the-pipeline-using-the-argo-workflows-cli">5. Monitor the pipeline using the Argo Workflows CLI<a class="headerlink" href="#5-monitor-the-pipeline-using-the-argo-workflows-cli" title="Permanent link">&para;</a></h4>
+<h5 id="5-monitor-the-pipeline-using-the-argo-workflows-cli">5. Monitor the pipeline using the Argo Workflows CLI<a class="headerlink" href="#5-monitor-the-pipeline-using-the-argo-workflows-cli" title="Permanent link">&para;</a></h5>
 <p>As the pipeline runs, you can monitor its progress using the Argo Workflows CLI. This will show you which steps have completed successfully and which are still running. Below are some useful commands, for more information about the Argo Workflows CLI, please check out <a href="https://argoproj.github.io/argo-workflows/walk-through/argo-cli/">the official Argo Workflows CLI documentation</a>.</p>
 <div class="language-bash highlight"><span class="filename">Terminal</span><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>$<span class="w"> </span>argo<span class="w"> </span>list<span class="w">                       </span><span class="c1"># list current workflows</span>
 </span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>$<span class="w"> </span>argo<span class="w"> </span>get<span class="w"> </span>workflow-xxx<span class="w">           </span><span class="c1"># get info about a specific workflow</span>
 </span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>$<span class="w"> </span>argo<span class="w"> </span>logs<span class="w"> </span>workflow-xxx<span class="w">          </span><span class="c1"># print the logs from a workflow</span>
 </span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>$<span class="w"> </span>argo<span class="w"> </span>delete<span class="w"> </span>workflow-xxx<span class="w">        </span><span class="c1"># delete workflow</span>
 </span></code></pre></div>
-<h4 id="6-retrieve-the-trained-model">6. Retrieve the trained model<a class="headerlink" href="#6-retrieve-the-trained-model" title="Permanent link">&para;</a></h4>
+<h5 id="6-retrieve-the-trained-model">6. Retrieve the trained model<a class="headerlink" href="#6-retrieve-the-trained-model" title="Permanent link">&para;</a></h5>
 <p>Once the pipeline has completed, you can retrieve the output data using the argo logs command or by viewing the output artifacts using the CLI, i.e. navigate to the directory you specified in your script and locate the file <code>model.pkl</code> or <code>model.rds</code>. The following code snippet, taken from <a href="#1-Write-a-script-to-train-your-model">the above training script</a>, tells the respective programming language where to save the trained model.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Python</label><label for="__tabbed_4_2">R</label></div>
 <div class="tabbed-content">
@@ -2474,12 +2474,12 @@
 </div>
 </div>
 </div>
-<h3 id="examples-using-argo-workflows-based-sdks">Examples using Argo Workflows-based SDKs<a class="headerlink" href="#examples-using-argo-workflows-based-sdks" title="Permanent link">&para;</a></h3>
+<h4 id="examples-using-argo-workflows-based-sdks">Examples using Argo Workflows-based SDKs<a class="headerlink" href="#examples-using-argo-workflows-based-sdks" title="Permanent link">&para;</a></h4>
 <p>Argo supports both auto-generated and community maintained <a href="https://argoproj.github.io/argo-workflows/client-libraries/">client libraries</a>, which includes Java and Python SDKs.</p>
 <p>If you prefer to use a higher level framework, then <code>Couler</code> and <code>Hera</code> are well-suited alternatives. These frameworks make the creation and management of complex workflows more accessible to a wider audience.</p>
-<h4 id="hera">Hera<a class="headerlink" href="#hera" title="Permanent link">&para;</a></h4>
+<h5 id="hera">Hera<a class="headerlink" href="#hera" title="Permanent link">&para;</a></h5>
 <p>Hera aims to simplify the process of building and submitting workflows by abstracting away many of the technical details through a simple application programming interface. It also uses a consistent set of terminology and concepts that align with Argo Workflows, making it easier for users to learn and use both tools together.</p>
-<h4 id="couler">Couler<a class="headerlink" href="#couler" title="Permanent link">&para;</a></h4>
+<h5 id="couler">Couler<a class="headerlink" href="#couler" title="Permanent link">&para;</a></h5>
 <p>Couler provides a simple, unified application programming interface for defining workflows using an imperative programming style. It also automatically constructs directed acyclic graphs (DAGs) for the workflows, which can help to simplify the process of creating and managing them.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Couler</label><label for="__tabbed_5_2">Hera</label></div>
 <div class="tabbed-content">
@@ -2679,7 +2679,7 @@
 </div>
 </div>
 </div>
-<h3 id="additional-resources-for-argo-workflows">Additional Resources for Argo Workflows<a class="headerlink" href="#additional-resources-for-argo-workflows" title="Permanent link">&para;</a></h3>
+<h4 id="additional-resources-for-argo-workflows">Additional Resources for Argo Workflows<a class="headerlink" href="#additional-resources-for-argo-workflows" title="Permanent link">&para;</a></h4>
 <p>Example Argo Workflows workflows can be found in the following Github repositories:</p>
 <ul>
 <li><a href="https://argoproj.github.io/argo-workflows/">Argo Workflows Documentation</a></li>

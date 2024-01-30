@@ -418,7 +418,7 @@
         
   
   <span class="md-ellipsis">
-    Introduction
+    Getting Started
   </span>
   
 
@@ -435,11 +435,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../0-Getting-Started/Getting-Started.html" class="md-nav__link">
+      <a href="../0-Getting-Started/Documentation.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Accessing the AAW
+    Documentation
   </span>
   
 
@@ -456,11 +456,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../0-Getting-Started/Documentation-and-Help.html" class="md-nav__link">
+      <a href="../0-Getting-Started/Help.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Documentation and Help
+    Help
   </span>
   
 
@@ -663,8 +663,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -693,8 +691,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -703,6 +699,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#virtual-environments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Virtual Environments
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Virtual Environments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#creating-and-adding-environments-to-the-jupyterlab-launcher" class="md-nav__link">
     <span class="md-ellipsis">
       Creating and Adding Environments to the JupyterLab Launcher
@@ -784,6 +790,11 @@
       Step 3: Refresh JupyterLab
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1934,8 +1945,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1944,6 +1953,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#virtual-environments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Virtual Environments
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Virtual Environments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#creating-and-adding-environments-to-the-jupyterlab-launcher" class="md-nav__link">
     <span class="md-ellipsis">
       Creating and Adding Environments to the JupyterLab Launcher
@@ -2032,6 +2051,11 @@
     </nav>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
     </ul>
   
@@ -2054,30 +2078,32 @@
   
 
 
-<h1 id="virtual-environments">Virtual Environments<a class="headerlink" href="#virtual-environments" title="Permanent link">&para;</a></h1>
+  <h1>Virtual Environments</h1>
+
+<h2 id="virtual-environments">Virtual Environments<a class="headerlink" href="#virtual-environments" title="Permanent link">&para;</a></h2>
 <p><img alt="Virtual Environments" src="../images/custom-launchers.png" /></p>
 <p>When conducting data science experiments, it's a best practice to utilize Python and/or conda virtual environments to manage your project dependencies. It is common to create a dedicated environment for each project or, in some cases, separate environments for different features or aspects of your work (for instance, one environment for general projects and an additional environment tailored for GPU-accelerated deep learning tasks).</p>
 <p>If you find yourself frequently switching between environments and desire a more convenient way to access them within JupyterLab, you can follow these instructions:</p>
-<h3 id="creating-and-adding-environments-to-the-jupyterlab-launcher">Creating and Adding Environments to the JupyterLab Launcher<a class="headerlink" href="#creating-and-adding-environments-to-the-jupyterlab-launcher" title="Permanent link">&para;</a></h3>
-<h4 id="step-1-create-the-environment">Step 1: Create the Environment<a class="headerlink" href="#step-1-create-the-environment" title="Permanent link">&para;</a></h4>
+<h4 id="creating-and-adding-environments-to-the-jupyterlab-launcher">Creating and Adding Environments to the JupyterLab Launcher<a class="headerlink" href="#creating-and-adding-environments-to-the-jupyterlab-launcher" title="Permanent link">&para;</a></h4>
+<h5 id="step-1-create-the-environment">Step 1: Create the Environment<a class="headerlink" href="#step-1-create-the-environment" title="Permanent link">&para;</a></h5>
 <p>Open a terminal session and run the following code to create a new virtual environment. You can use either conda or python venv based on your preferences and project requirements. Each has its own advantages:</p>
-<h4 id="using-conda">Using conda:<a class="headerlink" href="#using-conda" title="Permanent link">&para;</a></h4>
+<h5 id="using-conda">Using conda:<a class="headerlink" href="#using-conda" title="Permanent link">&para;</a></h5>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>torch
 </span></code></pre></div>
-<h5 id="advantages-of-conda">Advantages of conda:<a class="headerlink" href="#advantages-of-conda" title="Permanent link">&para;</a></h5>
+<h6 id="advantages-of-conda">Advantages of conda:<a class="headerlink" href="#advantages-of-conda" title="Permanent link">&para;</a></h6>
 <ul>
 <li>Manages both Python packages and environments.</li>
 <li>Simplifies package management, including non-Python libraries and dependencies.</li>
 </ul>
-<h4 id="using-venv">Using venv:<a class="headerlink" href="#using-venv" title="Permanent link">&para;</a></h4>
+<h5 id="using-venv">Using venv:<a class="headerlink" href="#using-venv" title="Permanent link">&para;</a></h5>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>torch
 </span></code></pre></div>
-<h5 id="advantages-of-venv">Advantages of venv:<a class="headerlink" href="#advantages-of-venv" title="Permanent link">&para;</a></h5>
+<h6 id="advantages-of-venv">Advantages of venv:<a class="headerlink" href="#advantages-of-venv" title="Permanent link">&para;</a></h6>
 <ul>
 <li>Part of the Python standard library (no separate installation required).</li>
 <li>Provides a lightweight, Python-centric virtual environment.</li>
 </ul>
-<h4 id="step-2-add-the-environment-to-the-launcher">Step 2: Add the Environment to the Launcher<a class="headerlink" href="#step-2-add-the-environment-to-the-launcher" title="Permanent link">&para;</a></h4>
+<h5 id="step-2-add-the-environment-to-the-launcher">Step 2: Add the Environment to the Launcher<a class="headerlink" href="#step-2-add-the-environment-to-the-launcher" title="Permanent link">&para;</a></h5>
 <p>After creating the environment, add it to the JupyterLab Launcher with the following command:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>python<span class="w"> </span>-m<span class="w"> </span>ipykernel<span class="w"> </span>install<span class="w"> </span>--user<span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;torch&quot;</span><span class="w"> </span>--display-name<span class="w"> </span><span class="s2">&quot;PyTorch&quot;</span>
 </span></code></pre></div>
@@ -2085,7 +2111,7 @@
 <li><code>--name "torch"</code> specifies the name of the kernel (replace "torch" as needed).</li>
 <li><code>--display-name "PyTorch"</code> sets the display name for the kernel in the JupyterLab Launcher (customize as necessary).</li>
 </ul>
-<h4 id="step-3-refresh-jupyterlab">Step 3: Refresh JupyterLab<a class="headerlink" href="#step-3-refresh-jupyterlab" title="Permanent link">&para;</a></h4>
+<h5 id="step-3-refresh-jupyterlab">Step 3: Refresh JupyterLab<a class="headerlink" href="#step-3-refresh-jupyterlab" title="Permanent link">&para;</a></h5>
 <p>To see the changes in the JupyterLab Launcher, refresh your browser by either clicking the refresh button or using the keyboard shortcut F5.</p>
 <p>These steps enable you to seamlessly manage your Python environments and access them conveniently from the JupyterLab Launcher, fostering a more organized and efficient workflow for your data science experiments.</p>
 

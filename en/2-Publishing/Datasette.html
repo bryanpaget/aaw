@@ -418,7 +418,7 @@
         
   
   <span class="md-ellipsis">
-    Introduction
+    Getting Started
   </span>
   
 
@@ -435,11 +435,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../0-Getting-Started/Getting-Started.html" class="md-nav__link">
+      <a href="../0-Getting-Started/Documentation.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Accessing the AAW
+    Documentation
   </span>
   
 
@@ -456,11 +456,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../0-Getting-Started/Documentation-and-Help.html" class="md-nav__link">
+      <a href="../0-Getting-Started/Help.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Documentation and Help
+    Help
   </span>
   
 
@@ -1269,8 +1269,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -1299,8 +1297,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1309,11 +1305,59 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#example-datasette" class="md-nav__link">
     <span class="md-ellipsis">
       Example Datasette
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Started
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting Started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-datasette" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing Datasette
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#starting-datasette" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starting Datasette
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1853,8 +1897,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1863,11 +1905,59 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#example-datasette" class="md-nav__link">
     <span class="md-ellipsis">
       Example Datasette
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Started
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting Started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-datasette" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing Datasette
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#starting-datasette" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starting Datasette
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1892,7 +1982,9 @@
   
 
 
-<h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h1>
+  <h1>Datasette</h1>
+
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>Datasette is an instant JSON API for your SQLite databases allowing you to explore the DB and run SQL queries in a more interactive way.</p>
 <p>You can find a list of example datasettes
 <a href="https://github.com/simonw/datasette/wiki/Datasettes">here</a>.</p>
@@ -1901,7 +1993,7 @@
 <p class="admonition-title">The Datasette Ecosystem</p>
 <p>There are all sorts of tools for converting data to and from sqlite <a href="https://docs.datasette.io/en/stable/ecosystem.html">here</a>. For example, you can load shapefiles into sqlite, or create <a href="https://vega.github.io/vega/">Vega</a> plots from a sqlite database. SQLite works well with <code>R</code>, <code>Python</code>, and many other tools.</p>
 </div>
-<h2 id="example-datasette">Example Datasette<a class="headerlink" href="#example-datasette" title="Permanent link">&para;</a></h2>
+<h3 id="example-datasette">Example Datasette<a class="headerlink" href="#example-datasette" title="Permanent link">&para;</a></h3>
 <p>Below are some screenshots from the <a href="https://global-power-plants.datasettes.com">global-power-plants</a> Datasette, you can preview and explore the data in the browser, either with clicks or SQL
 queries.</p>
 <p><img alt="Preview Data" src="../images/datasette-preview.png" /></p>
@@ -1912,13 +2004,13 @@ queries.</p>
 
 [![Click here for the video](../images/KubeflowVideo.PNG)](https://youtu.be/OPVfBKouBT8?t=214 "Advanced Analytics Workspace Kubeflow collaboration demo + tips and tricks") -->
 
-<h1 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h1>
-<h2 id="installing-datasette">Installing Datasette<a class="headerlink" href="#installing-datasette" title="Permanent link">&para;</a></h2>
+<h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
+<h3 id="installing-datasette">Installing Datasette<a class="headerlink" href="#installing-datasette" title="Permanent link">&para;</a></h3>
 <p>In your Jupyter Notebook, open a terminal window and run the command <code>pip3 install datasette</code>. </p>
 <p><center>
     <img alt="Install Datasette" src="../images/InstallDatasette.PNG" />
 </center></p>
-<h2 id="starting-datasette">Starting Datasette<a class="headerlink" href="#starting-datasette" title="Permanent link">&para;</a></h2>
+<h3 id="starting-datasette">Starting Datasette<a class="headerlink" href="#starting-datasette" title="Permanent link">&para;</a></h3>
 <p>To view your own database in your Jupyter Notebook, create a file called start.sh in your project directory and copy the below code into it. Make the file executable using <code>chmod +x start.sh</code>. Run the file with <code>./start.sh</code>. Access the web server using the <strong>base URL</strong> with the port number you are using in the below file.</p>
 <p><strong>start.sh</strong></p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="ch">#!/bin/bash</span>
