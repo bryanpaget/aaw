@@ -68,7 +68,7 @@ nav:
   - Démarrage:
     - Démarrage: index.md
     - Documentation: 0-Getting-Started/Documentation.md
-    - Help: 0-Getting-Started/Aide.md
+    - Aide: 0-Getting-Started/Aide.md
   - Stockage:
       - Aperçu: 5-Stockage/Aperçu.md
       - Azure Blob Storage (Conteneurs): 5-Stockage/StockageBlobAzure.md

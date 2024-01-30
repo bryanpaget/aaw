@@ -1,20 +1,20 @@
 # Besoin d'aide?
 
-Rejoignez notre communauté dynamique! Connectez-vous avec les développeurs d'AAW et d'autres utilisateurs, posez des questions et partagez vos expériences sur [Jira](https://jirab.statcan.ca/projects/BTIS/issues).
+Rejoignez notre communauté dynamique! Connectez-vous avec les développeurs d'EAA et d'autres utilisateurs, posez des questions et partagez vos expériences sur [Jira](https://jirab.statcan.ca/projects/BTIS/issues).
 
 Pour une documentation et des conseils complets, reportez-vous à :
 
-- [Documentation AAW](https://statcan.github.io/aaw/)
+- [Documentation d'EAA](https://statcan.github.io/aaw/)
 - [Documentation officielle Kubeflow](https://www.kubeflow.org/docs/)
 - [Documentation officielle JupyterLab](https://jupyterlab.readthedocs.io/en/stable/user/index.html)
 
 ## Démos et contributions
 
-Pour des démonstrations approfondies, une assistance personnalisée ou pour contribuer à la communauté AAW, contactez-nous sur [Jira](https://jirab.statcan.ca/projects/BTIS/issues). Vous pouvez contribuer au développement de la plateforme et signaler des problèmes ou des demandes de fonctionnalités sur [GitHub](https://github.com/StatCan/aaw).
+Pour des démonstrations approfondies, une assistance personnalisée ou pour contribuer à la communauté d'EAA, contactez-nous sur [Jira](https://jirab.statcan.ca/projects/BTIS/issues). Vous pouvez contribuer au développement de la plateforme et signaler des problèmes ou des demandes de fonctionnalités sur [GitHub](https://github.com/StatCan/aaw).
 
 # Ressources d'apprentissage externes
 
-Certains développeurs AAW sont également des data scientists ! Nous avons donc beaucoup de matériel à partager sur les outils et les meilleures pratiques de science des données. Vous trouverez ci-dessous quelques ressources d’apprentissage utiles et intéressantes en science des données :
+Certains développeurs d'EAA sont également des data scientists ! Nous avons donc beaucoup de matériel à partager sur les outils et les meilleures pratiques de science des données. Vous trouverez ci-dessous quelques ressources d’apprentissage utiles et intéressantes en science des données :
 
 ## Ressources de science des données (R et Python)
 
