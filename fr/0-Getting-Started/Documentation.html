@@ -2047,13 +2047,13 @@
 
 
 <h1 id="documentation-leaa">Documentation L'EAA<a class="headerlink" href="#documentation-leaa" title="Permanent link">&para;</a></h1>
-<p>Pour des instructions plus détaillées sur la création d'un serveur de bloc-notes, veuillez <a href="https://statcan.github.io/aaw/en/1-Experiments/Kubeflow.html#setup">suivre les instructions ici</a> pour configurer le serveur de bloc-notes.</p>
+<p>Pour des instructions plus détaillées sur la création d'un serveur de bloc-notes, veuillez <a href="/aaw/en/1-Experiments/Kubeflow.html#setup">suivre les instructions ici</a> pour configurer le serveur de bloc-notes.</p>
 <p>Nous avons également <a href="https://054gc-my.sharepoint.com/:p:/g/personal/bryan_paget_statcan_gc_ca/ERkFPxTJwkhNoBKbkCQymqcBoFe2n7PRV0TjLW0KqiJdjQ?e=05Dfg6">un diaporama</a> avec des instructions sur la façon de créer un serveur de bloc-notes.</p>
 <h2 id="kubeflow">Kubeflow<a class="headerlink" href="#kubeflow" title="Permanent link">&para;</a></h2>
 <p><img alt="Tableau de bord central Kubeflow" src="../images/kubeflow-main-screen.png" /></p>
-<p>L'EAA est basé sur <a href="https://statcan.github.io/aaw/en/1-Experiments/Kubeflow.html">Kubeflow</a>, une solution complète open source pour le déploiement et la gestion de workflows ML de bout en bout. Kubeflow simplifie la création et la gestion d'environnements de calcul personnalisables avec un provisionnement de ressources contrôlé par l'utilisateur (CPU, GPU, RAM et stockage personnalisés). Pour plus d’informations sur Kubeflow, veuillez visiter :</p>
+<p>L'EAA est basé sur <a href="/aaw/en/1-Experiments/Kubeflow.html">Kubeflow</a>, une solution complète open source pour le déploiement et la gestion de workflows ML de bout en bout. Kubeflow simplifie la création et la gestion d'environnements de calcul personnalisables avec un provisionnement de ressources contrôlé par l'utilisateur (CPU, GPU, RAM et stockage personnalisés). Pour plus d’informations sur Kubeflow, veuillez visiter :</p>
 <ul>
-<li><a href="https://statcan.github.io/aaw/en/1-Experiments/Kubeflow.html">Documentation l'EAA Kubeflow</a></li>
+<li><a href="/aaw/en/1-Experiments/Kubeflow.html">Documentation l'EAA Kubeflow</a></li>
 <li><a href="https://www.kubeflow.org/docs/started/introduction/">Documentation officielle Kubeflow</a></li>
 </ul>
 <h3 id="videos-kubeflow">Vidéos Kubeflow<a class="headerlink" href="#videos-kubeflow" title="Permanent link">&para;</a></h3>
@@ -2062,13 +2062,13 @@
 <li><a href="https://www.youtube.com/playlist?list=PLIivdWyY5sqlS4lN75RPDEyBgTro_YX7x">Kubeflow 101</a> par Google Cloud Tech</li>
 </ul>
 <h2 id="travailler-avec-vos-donnees">Travailler avec vos données<a class="headerlink" href="#travailler-avec-vos-donnees" title="Permanent link">&para;</a></h2>
-<p>Une fois votre serveur de bloc-notes créé, vous souhaiterez peut-être importer des données ou accéder aux données partagées à partir du stockage cloud. Des instructions sur la façon d'ajouter du stockage à votre serveur de bloc-notes sont disponibles sur <a href="https://statcan.github.io/aaw/en/5-Storage/KubeflowVolumes.html">la page de documentation pour le stockage</a>.</p>
-<p>Si vous souhaitez télécharger des données sur votre serveur de bloc-notes (<a href="https://statcan.github.io/aaw/en/5-Storage/KubeflowVolumes.html#setup">sur un volume de données</a>, par exemple), vous pouvez télécharger données dans JupyterLab en suivant <a href="https://jupyterlab.readthedocs.io/en/stable/user/files.html#uploading-and-downloading">la documentation officielle de JupyterLab</a>, qui contient une section sur le téléchargement et le téléchargement de fichiers à partir du Interface Web JupyterLab.</p>
+<p>Une fois votre serveur de bloc-notes créé, vous souhaiterez peut-être importer des données ou accéder aux données partagées à partir du stockage cloud. Des instructions sur la façon d'ajouter du stockage à votre serveur de bloc-notes sont disponibles sur <a href="/aaw/en/5-Storage/KubeflowVolumes.html">la page de documentation pour le stockage</a>.</p>
+<p>Si vous souhaitez télécharger des données sur votre serveur de bloc-notes (<a href="/aaw/en/5-Storage/KubeflowVolumes.html#setup">sur un volume de données</a>, par exemple), vous pouvez télécharger données dans JupyterLab en suivant <a href="https://jupyterlab.readthedocs.io/en/stable/user/files.html#uploading-and-downloading">la documentation officielle de JupyterLab</a>, qui contient une section sur le téléchargement et le téléchargement de fichiers à partir du Interface Web JupyterLab.</p>
 <h3 id="donnees-protegees">Données protégées<a class="headerlink" href="#donnees-protegees" title="Permanent link">&para;</a></h3>
 <p>Si votre projet nécessite des données protégées:</p>
 <ul>
 <li>Des buckets de stockage cloud seront créés pour vous au moment de l'intégration de vos projets.</li>
-<li>L'accès aux données protégées se fait en ouvrant le dossier buckets, voir <a href="https://statcan.github.io/aaw/en/5-Storage/AzureBlobStorage.html">la documentation sur Azure Blob Storage</a>.</li>
+<li>L'accès aux données protégées se fait en ouvrant le dossier buckets, voir <a href="/aaw/en/5-Storage/AzureBlobStorage.html">la documentation sur Azure Blob Storage</a>.</li>
 </ul>
 <h2 id="jupyterlab">JupyterLab<a class="headerlink" href="#jupyterlab" title="Permanent link">&para;</a></h2>
 <p>Kubeflow crée et gère des serveurs de bloc-notes exécutant JupyterLab, qui est l'interface principale dans laquelle vous effectuerez votre travail de science des données.</p>
@@ -2080,19 +2080,19 @@
 <p>Lorsque vous effectuez des expériences de science des données, il est recommandé d'utiliser des environnements virtuels Python et/ou conda pour gérer les dépendances de votre projet. Il est courant de créer un environnement dédié pour chaque projet ou, dans certains cas, des environnements distincts pour différentes fonctionnalités ou aspects de votre travail (par exemple, un environnement pour les projets généraux et un environnement supplémentaire adapté aux tâches d'apprentissage en profondeur accélérées par GPU).</p>
 <div class="admonition info">
 <p class="admonition-title">Environnements virtuels et lanceur</p>
-<p>Si vous passez fréquemment d'un environnement à l'autre et souhaitez un moyen plus pratique d'y accéder dans JupyterLab, vous pouvez suivre <a href="https://statcan.github.io/aaw/en/1-Experiments/Virtual-Environments. html#création-et-ajout-d'environnements-au-lanceur-jupyterlab">ces instructions</a>.</p>
+<p>Si vous passez fréquemment d'un environnement à l'autre et souhaitez un moyen plus pratique d'y accéder dans JupyterLab, vous pouvez suivre <a href="/aaw/en/1-Experiments/Virtual-Environments. html#création-et-ajout-d'environnements-au-lanceur-jupyterlab">ces instructions</a>.</p>
 </div>
 <h2 id="exemples-de-cahiers">Exemples de cahiers<a class="headerlink" href="#exemples-de-cahiers" title="Permanent link">&para;</a></h2>
 <p>Vous pouvez télécharger ces blocs-notes et les télécharger sur votre serveur de blocs-notes. Ces bloc-notes peuvent également être exécutés à partir de Visual Studio Code si vous préférez.</p>
 <ol>
-<li><a href="https://statcan.github.io/aaw/en/1-Experiments/Notebooks/VisualPython_EN.html">Visual Python : Simplifier l'analyse des données pour les apprenants Python</a></li>
-<li><a href="https://statcan.github.io/aaw/en/1-Experiments/Notebooks/YData-Profiling_EN.html">Profilage YData : rationaliser l'analyse des données</a></li>
-<li><a href="https://statcan.github.io/aaw/en/1-Experiments/Notebooks/DrawData_EN.html">Dessiner des données : créer facilement des ensembles de données synthétiques</a></li>
-<li><a href="https://statcan.github.io/aaw/en/1-Experiments/Notebooks/DTale_EN.html">D-Tale : un outil d'exploration de données transparente pour Python</a></li>
-<li><a href="https://statcan.github.io/aaw/en/1-Experiments/Notebooks/MitoSheet_EN.html">Feuille Mito : feuilles de calcul de type Excel dans JupyterLab</a></li>
-<li><a href="https://statcan.github.io/aaw/en/1-Experiments/Notebooks/PyGWalker_EN.html">PyGWalker : Simplifier l'analyse exploratoire des données avec Python</a></li>
-<li><a href="https://statcan.github.io/aaw/en/1-Experiments/Notebooks/ReRun_EN.html">ReRun : visualisation de données multimodales rapide et puissante</a></li>
-<li><a href="https://statcan.github.io/aaw/en/1-Experiments/Notebooks/SweetViz_EN.html">SweetViz : Rationaliser l'EDA avec des visualisations élégantes</a></li>
+<li><a href="/aaw/en/1-Experiments/Notebooks/VisualPython_EN.html">Visual Python : Simplifier l'analyse des données pour les apprenants Python</a></li>
+<li><a href="/aaw/en/1-Experiments/Notebooks/YData-Profiling_EN.html">Profilage YData : rationaliser l'analyse des données</a></li>
+<li><a href="/aaw/en/1-Experiments/Notebooks/DrawData_EN.html">Dessiner des données : créer facilement des ensembles de données synthétiques</a></li>
+<li><a href="/aaw/en/1-Experiments/Notebooks/DTale_EN.html">D-Tale : un outil d'exploration de données transparente pour Python</a></li>
+<li><a href="/aaw/en/1-Experiments/Notebooks/MitoSheet_EN.html">Feuille Mito : feuilles de calcul de type Excel dans JupyterLab</a></li>
+<li><a href="/aaw/en/1-Experiments/Notebooks/PyGWalker_EN.html">PyGWalker : Simplifier l'analyse exploratoire des données avec Python</a></li>
+<li><a href="/aaw/en/1-Experiments/Notebooks/ReRun_EN.html">ReRun : visualisation de données multimodales rapide et puissante</a></li>
+<li><a href="/aaw/en/1-Experiments/Notebooks/SweetViz_EN.html">SweetViz : Rationaliser l'EDA avec des visualisations élégantes</a></li>
 </ol>
 
 
@@ -2125,7 +2125,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2023 Statistics Canada
+      Copyright &copy; 2024 Statistics Canada
     </div>
   
   

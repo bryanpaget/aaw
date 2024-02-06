@@ -1,12 +1,12 @@
-# The Advanced Analytics Workspace
+# Business Transformation Interim Solution 1
 
 ![Statistics](images/statistics-on-the-moon-small.jpg)
 
-The [Advanced Analytics Workspace](https://www.statcan.gc.ca/data-analytics-services/aaw) (AAW) stands as a comprehensive and open-source solution designed to cater to the diverse needs of data scientists, analysts, and researchers proficient in open-source tools and coding. It offers a flexible environment that empowers practitioners to seamlessly conduct their work. More information about the AAW and Data Analytics Services (DAS) can be found on [the DAS Portal](https://www.statcan.gc.ca/data-analytics-services/aaw).
+The Business Transformation Interim Solution 1, based on the [Advanced Analytics Workspace (AAW)](https://www.statcan.gc.ca/data-analytics-services/aaw), stands as a comprehensive and open-source solution designed to cater to the diverse needs of data scientists, analysts, and researchers proficient in open-source tools and coding. It offers a flexible environment that empowers practitioners to seamlessly conduct their work. More information about the AAW and Data Analytics Services (DAS) can be found on [the DAS Portal](https://www.statcan.gc.ca/data-analytics-services/aaw).
 
 ## AVD
 
-The Advanced Analytics Workspace (AAW) runs in the cloud and it's main interface is called Kubeflow. In order to access the AAW, please launch your AVD using the **Remote Desktop** icon on your personal computer.
+The Advanced Analytics Workspace (AAW) runs in the cloud and its main interface is called Kubeflow. In order to access the AAW, please launch your AVD using the **Remote Desktop** icon on your personal computer.
 
 ![AVD Icon](./images/avd-icon.png)
 
@@ -56,7 +56,7 @@ When you select the menu, a dropdown list will appear with all the namespaces yo
 
 ## If you see the name of a namespace, you are ready to use the AAW.
 
-Once a namespace has been selected, the name of the namespace will replace "Select namespace". If no namespaces appear in the menu, please contact us on [Jira](https://jirab.statcan.ca/projects/BTIS/issues).
+Once a namespace has been selected, the name of the namespace will replace "Select namespace". If no namespaces appear in the menu, please contact your divisional reps.
 
 ![Selecting a Namespace](./images/select-a-namespace-3.png)
 
@@ -68,7 +68,7 @@ Once you click **Notebooks** from the Central Dashboard Sidebar, you will be bro
 
 ![Kubeflow Notebook Servers](./images/kubeflow-sidebar-notebooks-selected.png)
 
-**Note**:  only one set of notebook servers can be viewed at a time. If you have more than one namespace. You may need to select the appropriate namespace from the **Select namespace** dropdown menu in the upper left-hand corner to see the notebook servers belonging to that particular namespace. 
+**Note**:  only one set of notebook servers can be viewed at a time. If you have more than one namespace. You may need to select the appropriate namespace from the **Select namespace** dropdown menu in the upper left-hand corner to see the notebook servers belonging to that particular namespace.  Please consult with your divisional reps if you don't know which namespaces should be selected.
 
 # Click **"+ New Notebook"**
 
