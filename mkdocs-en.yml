@@ -1,7 +1,7 @@
-site_name: Advanced Analytics Workspace
+site_name: Business Transformation Interim Solution 1
 site_url: https://statcan.github.io/aaw/en/
-site_description: User guide for the Advanced Analytics Workspace
-copyright: Copyright &copy; 2023 Statistics Canada
+site_description: User guide for the Business Transformation Interim Solution 1
+copyright: Copyright &copy; 2024 Statistics Canada
 strict: true
 
 docs_dir: docs/en
@@ -12,7 +12,32 @@ repo_url: https://github.com/StatCan/aaw
 edit_uri: edit/master/docs/en
 
 theme:
-  name: readthedocs
+  name: material
+  palette:
+       # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: black
+      accent: indigo
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: black
+      accent: indigo
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
   features:
     - content.tabs.link
     - content.code.copy
@@ -22,6 +47,7 @@ theme:
   show_sidebar: true
   #logo: images/statcan.png
   custom_dir: overrides
+  
 
 markdown_extensions:
   - toc:
