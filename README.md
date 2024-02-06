@@ -6,7 +6,7 @@
 
 Welcome to the documentation repository for the Advanced Analytics Workspace (AAW), brought to you by Data Analytics Services (DAS) at Statistics Canada. This documentation is tailored for users and developers of the AAW within the Government of Canada and external collaborators.
 
-If you have any questions about the project, feel free to connect with us on our [**Slack Support Channel**](https://statcan-aaw.slack.com/).
+If you have any questions about the project, feel free to connect with us on [Jira](https://jirab.statcan.ca/projects/BTIS/issues).
 
 ## AAW Repositories
 
@@ -20,7 +20,7 @@ If you have any questions about the project, feel free to connect with us on our
 
 - Explore our JupyterLab images featuring example notebooks and data, located in `/aaw-contrib-jupyter-notebooks/`.
 - The R Studio image also includes example notebooks and data, available in `/aaw-contrib-r-notebooks/`.
-- Find more examples in the [Example Notebooks](https://statcan.github.io/aaw/en/1-Experiments/Notebooks/DrawData_EN.html) section.
+- Find more examples in the [Example Notebooks](/aaw/en/1-Experiments/Notebooks/DrawData_EN.html) section.
 
 ## Presentations
 

@@ -58,7 +58,7 @@ To learn more about the technology behind these, check out the
 
 ### Sharing with the world
 
-Ask about that one in our [Slack channel](https://statcan-aaw.slack.com). There are many ways to do this from the IT side, but it's important for it to go through proper processes, so this is not done in a "self-serve" way that the others are. That said, it is totally possible.
+There are many ways to do this from the IT side, but it's important for it to go through proper processes, so this is not done in a "self-serve" way that the others are. That said, it is totally possible.
 
 ## Managing contributors
 

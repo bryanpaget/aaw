@@ -40,7 +40,7 @@ Scroll down to see the **Launch Button.**  The Launch button will only be active
 
 Press the Launch button to launch you new Notebook.
 
-[For more information about Statcan AAW Kubeflow, Click here.](https://statcan.github.io/aaw/en/1-Experiments/Kubeflow/)
+[For more information about Statcan AAW Kubeflow, Click here.](/aaw/en/1-Experiments/Kubeflow/)
 
 ### Existing Notebooks
 
@@ -90,7 +90,7 @@ The log files should appear under the `Microsim` parent directory.
 
 Please see the following link for more information on this topic:
 
-[Azure Blob storage](https://statcan.github.io/aaw/en/5-Storage/AzureBlobStorage/)
+[Azure Blob storage](/aaw/en/5-Storage/AzureBlobStorage/)
 
 Click on the Model you want (Left Panel) to select it.  
 

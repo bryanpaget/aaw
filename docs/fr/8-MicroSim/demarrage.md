@@ -39,7 +39,7 @@ Faites défiler vers le bas pour voir le **Bouton de lancement.** Le bouton de l
 
 Appuyez sur le bouton Lancer pour lancer votre nouveau bloc-notes.
 
-[Pour plus d'informations sur Kubeflow de l'EAA, cliquez ici.](https://statcan.github.io/aaw/en/1-Experiments/Kubeflow/)
+[Pour plus d'informations sur Kubeflow de l'EAA, cliquez ici.](/aaw/fr/1-Experiences/Kubeflow.html)
 
 ### Carnets existants
 
@@ -89,7 +89,7 @@ Les fichiers journaux doivent apparaître sous le répertoire parent « Microsim
 
 Veuillez consulter le lien suivant pour plus d'informations sur ce sujet :
 
-[Stockage Azure Blob](https://statcan.github.io/aaw/en/5-Storage/AzureBlobStorage/)
+[Stockage Azure Blob](/aaw/fr/5-Stockage/StockageBlobAzure.html)
 
 Cliquez sur le modèle souhaité (panneau de gauche) pour le sélectionner.
 

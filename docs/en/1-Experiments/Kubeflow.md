@@ -70,7 +70,8 @@ Upon the creation of a notebook click 'Advanced options', check the checkbox for
 
 ![Choose an Image](../images/customNotebook.PNG)
 
-Once the notebook is created, if the status is not ready in a few minutes, click on it's name to see the details page. Then the 'Events' tab allows you to know exactly what is happening. If necessary, reach out to the help channel on slack if the problem persists.
+Once the notebook is created, if the status is not ready in a few minutes, click on it's name to see the details page. Then the 'Events' tab allows you to know exactly what is happening. If necessary, reach out on [Jira](https://jirab.statcan.ca/projects/BTIS/issues) if the problem persists.
+
 ## CPU and Memory
 
 At the time of writing (December 23, 2021) there are two types of computers in
