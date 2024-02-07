@@ -10,7 +10,7 @@ Azure Blob Storage Containers have the following advantages over Kubeflow Volume
   
 <!-- prettier-ignore -->
 !!! warning "Azure Blob Storage containers and buckets have replaced MinIO storage and buckets."
-    Users will be responsible for migrating data from MinIO Buckets to the Azure Storage folders. [Click here for instructions on how to migrate!](#how-to-migrate-from-minio-to-azure-blob-storage). For larger files, users may contact their divisional reps.
+    Users will be responsible for migrating data from MinIO Buckets to the Azure Storage folders. [Click here for instructions on how to migrate!](#how-to-migrate-from-minio-to-azure-blob-storage). For larger files, users may contact their divisional leads.
 
 ## Setup
 
