@@ -1,6 +1,6 @@
 <!-- markdownlint-disable no-bare-urls no-duplicate-header -->
 
-# Advanced Analytics Workspace (AAW)
+# Business Transformation Iteration 1
 
 ![AAW](https://github.com/StatCan/aaw/assets/8212170/ed9d44d9-3606-4097-b9a8-2ee715f13ebf)
 
