@@ -14,6 +14,8 @@ Once your AVD has started, you can launch the AAW by opening the icon on your de
 
 ![AAW Icon](./images/aaw-icon-on-desktop.png)
 
+Note: This is just an example icon, the actual icon used in production may differ. 
+
 # Login with Your Statistics Canada Account
 
 You'll need to login using your Statistics Canada account.

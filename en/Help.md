@@ -1,6 +1,6 @@
 # Have questions? Or feedback?
 
-If you have any questions of feedback, please open a ticket on [Jira](https://jirab.statcan.ca/projects/BTIS/issues).
+If you have any questions of feedback, please reach out to your divisional leads or advanced users.
 
 <!-- # Video tutorials
 

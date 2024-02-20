@@ -1,6 +1,6 @@
 # Need Help?
 
-Join our vibrant community! Connect with AAW developers and fellow users, ask questions, and share experiences all on [Jira](https://jirab.statcan.ca/projects/BTIS/issues).
+Join our vibrant community! For help and assistance, please reach out to your divisional leads and advanced users.
 
 For comprehensive documentation and guidance, refer to the:
 
