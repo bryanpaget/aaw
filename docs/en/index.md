@@ -13,6 +13,7 @@ The Advanced Analytics Workspace (AAW) runs in the cloud and its main interface 
 Once your AVD has started, you can launch the AAW by opening the icon on your desktop. You can also access the AAW by following this link: [https://kubeflow.aaw.cloud.statcan.ca/](https://kubeflow.aaw.cloud.statcan.ca/).
 
 ![AAW Icon](./images/aaw-icon-on-desktop.png)
+
 Note: This is just an example icon, the actual icon used in production may differ. 
 
 # Login with Your Statistics Canada Account
