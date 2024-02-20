@@ -25,6 +25,10 @@ Once your notebook server has been created, you may want to import data or acces
 
 If you want to upload data into your notebook server ([on a Data Volume](/aaw/en/5-Storage/KubeflowVolumes.html#setup), for instance), you can upload data into JupyterLab by following [the official JupyterLab documentation](https://jupyterlab.readthedocs.io/en/stable/user/files.html#uploading-and-downloading), which has a section on uploading and downloading files from the JupyterLab web interface.
 
+### Field Filers
+
+Under construction...
+
 ### Protected Data
 
 If your project requires protected data:
